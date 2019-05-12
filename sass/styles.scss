@@ -1,0 +1,267 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ */
+
+@import 'base';
+@import 'reset';
+
+
+#page {
+  width: 100%;
+}
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+
+
+// BLOCKS
+#benefits,
+#conditions {
+  background: $page_bg_2;
+}
+
+// HEADER
+#header {
+  position: relative;
+  text-align: center;
+}
+.header-content {
+  text-align: center;
+}
+
+a.button {
+  $btn_size: 54px;
+
+  position: relative;
+  display: inline-block;
+
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: $color_dark;
+  background-color: transparent;
+  margin: 10px 0 0;
+  padding: 0 30px 0 45px;
+  height: $btn_size;
+  line-height: $btn_size;
+  z-index: 1;
+
+  @include transition-property(none);
+
+  &::before,
+  &::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: $btn_size;
+    height: $btn_size;
+    line-height: $btn_size;
+  }
+
+  &::before {
+    content: '';
+    background: rgba(#888, 0.15);
+    @include border-radius(100px);
+    @include single-transition(width, 300ms, ease-out);
+    z-index: -1;
+  }
+
+  &::after {
+    content: '+';
+    font-size: 27px;
+    font-weight: normal;
+    text-align: center;
+    color: $link_color;
+  }
+  &:hover::before,
+  &:focus::before {
+    width: 100%;
+  }
+}
+
+
+
+// SUB HEAD
+#sub-head {
+  line-height: 1;
+  overflow: hidden;
+
+  .content {
+    position: relative;
+    left: 50%;
+  }
+  img {
+    position: relative;
+    @include translate(-50%, 0);
+  }
+}
+
+
+// CONDITIONS
+.condition-list {
+  background: $page_bg;
+  border-top: 1px solid $border;
+  border-left: 1px solid $border;
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+}
+
+.condition {
+  .content {
+    border-right: 1px solid  $border;
+    border-bottom: 1px solid  $border;
+  }
+}
+
+
+// DESCRIPTION
+#description {
+}
+
+// BENEFITS
+.benefit {
+  margin-top: 20px;
+  .content {
+    max-width: 335px;
+    padding-top: 52px;
+    background: url(img/money.png) no-repeat;
+  }
+}
+
+
+
+
+
+// FOOTER
+#footer {
+
+  color: $footer_color;
+  background: $footer_bg;
+
+  .form-items {
+    counter-reset: form-list;
+    padding: 10px 0 0;
+    margin: 0 0 60px;
+
+    label {
+      font-size: 16px;
+    }
+    input,
+    textarea {
+      line-height: 1.458;
+      font-style: normal;
+      font-weight: normal;
+      color: inherit;
+      background: transparent;
+    }
+  }
+
+  .form-type-button {
+    input {
+      width: 100%;
+    }
+  }
+  .form-item {
+    position: relative;
+
+    &::before {
+      counter-increment: form-list;
+      content: counter(form-list);
+      color: $link_color;
+      font-size: 20px;
+      text-align: center;
+      display: block;
+      position: absolute;
+      top: 0.5em;
+      left: 0;
+      @include border-radius(50%);
+      border: 1px solid  $border_form;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+}
+
+
+
+
+// HELPER
+
+.gmap {line-height: 0;}
+
+.sel {color: $link_color;}
+
+
+.clearfix {
+  @include pie-clearfix();
+}
+
+
+
+// USER MESSAGE
+
+.overlay {
+  position: fixed;
+  @include style-overlay(rgba(#000, 0.75));
+
+  .wrapper {
+    width: 90%;
+    max-width: 450px;
+    min-height: 200px;
+    padding: 0;
+    margin: auto;
+    color: $footer_color;
+    background: $footer_bg;
+    border: 2px solid $border_form;
+    position: relative;
+    top: 50%;
+    @include translateY(-50%);
+  }
+
+  .content {
+    padding: 2em;
+  }
+
+  .title {
+    padding: 10px 0 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid  $border_form;
+  }
+
+  p {
+    margin: 0 0 0.5em 2em;
+  }
+
+  .close,
+  .remove {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include link-colors($link_color, $page_bg, $page_bg, $link_color, $page_bg);
+    @include link-bg($page_bg, $link_color, $link_color, $page_bg, $link_color);
+    @include transition(color 500ms ease-out);
+
+  }
+}
+
+
+
+

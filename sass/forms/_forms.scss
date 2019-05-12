@@ -1,0 +1,122 @@
+  @import 'base';
+
+// FORM
+input,
+label,
+select,
+button,
+textarea {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+label {
+  font-family: $ff_head;
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0px 0 5px;
+}
+textarea,
+input[type="text"] {
+  font-family: inherit;
+  font-size: inherit;
+  width: 100%;
+  padding: 16px 0;
+  border: 0 solid  $border_form;
+  border-bottom-width: 2px;
+  resize: none;
+
+  &.error {
+    border-bottom-color: $border_form_err;
+  }
+  &.pass {
+    border-bottom-color: $border_form_pass;
+  }
+}
+
+
+input[type="radio"],
+input[type="checkbox"], {
+  display: none;
+  &+label {
+    position: relative;
+    padding-left: 25px;
+    cursor: pointer;
+    @include user-select(none);
+
+    &::before {
+      content: '';
+
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 0px;
+
+      width: 12px;
+      height: 12px;
+      vertical-align: baseline;
+      border: 2px solid $border_form;
+      @include border-radius(3px);
+      @include transition(all .2s, border-color .1s);
+    }
+  }
+  &:checked+label {
+    &::before {
+      width: 6px;
+      top: -2px;
+      left: 5px;
+      border-color: $link_color;
+      border-top-color: transparent;
+      border-left-color: transparent;
+      @include border-radius(0);
+      @include rotate(35deg);
+    }
+  }
+}
+input[type="radio"] + label::before {
+  @include border-radius(50%);
+}
+
+
+button,
+input[type="button"],
+input[type="submit"] {
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 1;
+
+  position: relative;
+  cursor: pointer;
+
+  padding: 19px 40px;
+  margin: 0;
+  border: none;
+
+  @include link-colors($link_color, $page_bg, $page_bg, $link_color, $page_bg);
+  @include link-bg($page_bg, $link_color, $link_color, $page_bg, $link_color);
+  @include border-radius(100px);
+  @include transition(color 300ms ease-out, background 300ms ease-out);
+
+  &:active {
+    top: 2px;
+  }
+}
+
+.form-item {
+  margin: 0 0 35px;
+}
+
+.form-type-text label,
+.form-type-textarea label {
+  display: block;
+}
+.form-type-button {
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+

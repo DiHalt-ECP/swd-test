@@ -1,0 +1,123 @@
+
+@import 'base';
+@import 'heading/_heading-mobile.scss';
+
+body {
+}
+
+#page {
+  font-size: 16px;
+}
+
+.container {
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+}
+
+
+
+// HEADER
+#header {
+  .container {
+    margin: 140px auto 100px;
+  }
+}
+
+// SUB HEADER
+#sub-head {
+  img {
+    max-width: none;
+    height: 400px;
+  }
+}
+
+
+// CONDITIONS
+#conditions {
+  .container {
+    max-width: 80%;
+  }
+}
+.condition {
+  .content {
+    padding: 40px 30px 30px;
+  }
+}
+
+
+// DESCRIPTION
+#description {
+  .container {
+    max-width: 80%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+
+
+// BENEFITS
+#benefits {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+.benefit {
+  padding-bottom: 20px;
+  .content {
+    margin: 0 auto;
+  }
+}
+
+
+
+// FOOTER
+#footer {
+  $form_num_size: 40px;
+
+  .form-item {
+    padding-left: $form_num_size + 20px;
+    padding-top: $form_num_size/2;
+
+    &::before {
+      width: $form_num_size;
+      height: $form_num_size;
+      line-height: $form_num_size;
+    }
+  }
+
+  .form-type-button {
+    padding-left: $form_num_size + 20px;
+  }
+  .form-items {
+    font-size: 20px;
+  }
+  .container {
+    padding: 80px $gutter-width;
+  }
+}
+
+
+
+
+
+
+
+
+
+// FORM
+.form-item {
+  margin: 0 10px 35px;
+}
+
+
+
+
+// HELPER
+.col-1-2,
+.col-1-3 {
+  width: 100%;
+  float: none;
+}
+

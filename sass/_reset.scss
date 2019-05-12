@@ -1,0 +1,63 @@
+
+@import 'base';
+@import "compass/reset";
+@import 'fonts/font_face_dinpro';
+
+// Remove border and padding in Firefox
+::-moz-focus-outer, ::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: $sans-serif-small;
+  line-height: 1.625;
+  @include box-sizing(border-box);
+  background: $page_bg;
+  color: $color;
+}
+body {
+  scroll-behavior: smooth;
+}
+
+@import 'heading/heading';
+
+// Media Reset.
+figure {
+  overflow: hidden;
+  img {
+    display: block;
+  }
+}
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+b, strong {
+  font-weight: 700;
+}
+i, em {
+  font-style: italic;
+}
+
+p, pre {
+  margin: 0 0 1.5em;
+}
+
+
+
+
+
+a {
+  @include link-colors($link_color, $link_color_h, $link_color_h, $link_color, $link_color_h);
+  @include single-transition(all, 300ms, ease-out);
+  text-decoration: none;
+  outline: none;
+}
+
+@import 'forms/forms';
+

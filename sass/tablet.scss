@@ -1,0 +1,119 @@
+
+@import 'base';
+@import 'heading/_heading-mobile.scss';
+
+
+body {
+}
+
+.container {
+  padding-left: $gutter-width;
+  padding-right: $gutter-width;
+}
+
+
+
+// HEADER
+#header {
+  .container {
+    margin: 140px auto 100px;
+  }
+}
+
+// SUB HEADER
+#sub-head {
+  img {
+    max-width: none;
+    height: 600px;
+  }
+}
+
+
+// CONDITIONS
+#conditions {
+  .container {
+    width: 80%;
+    min-width: 740px;
+  }
+}
+.condition {
+  .content {
+    padding: 40px 30px 40px;
+  }
+  h4 {
+    height: 5em;
+    overflow: hidden;
+  }
+}
+
+
+// DESCRIPTION
+#description {
+  .container {
+    width: 75%;
+    max-width: 750px;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+
+// BENEFITS
+#benefits {
+  .container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+.benefit {
+  padding-bottom: 20px;
+  .content {
+    margin: 0 auto;
+  }
+}
+
+
+// FOOTER
+#footer {
+  $form_num_size: 50px;
+
+  .form-item {
+    padding-left: $form_num_size + 20px;
+    padding-top: $form_num_size/2;
+
+    &::before {
+      width: $form_num_size;
+      height: $form_num_size;
+      line-height: $form_num_size;
+    }
+  }
+
+  .form-type-button {
+    padding-left: $form_num_size + 20px;
+  }
+  .form-items {
+    font-size: 22px;
+  }
+  .container {
+    max-width: 670px;
+    padding: 80px $gutter-width;
+  }
+}
+
+
+
+
+// HELPER
+
+.col-1-2{
+  width: 50%;
+  float: left;
+}
+
+.col-1-3 {
+  width: 100%;
+  float: none;
+}
+
+
+
