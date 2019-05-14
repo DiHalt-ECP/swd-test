@@ -370,25 +370,25 @@ input[type="button"]:active,
 input[type="submit"]:active {
   color: #fff;
 }
-/* line 130, ../sass/_custom.scss */
+/* line 138, ../sass/_custom.scss */
 button:visited,
 input[type="button"]:visited,
 input[type="submit"]:visited {
   background: #fff;
 }
-/* line 135, ../sass/_custom.scss */
+/* line 143, ../sass/_custom.scss */
 button:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus {
   background: #F47821;
 }
-/* line 140, ../sass/_custom.scss */
+/* line 148, ../sass/_custom.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
   background: #F47821;
 }
-/* line 145, ../sass/_custom.scss */
+/* line 153, ../sass/_custom.scss */
 button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
@@ -418,35 +418,166 @@ input[type="submit"]:active {
   text-align: center;
 }
 
-/* line 11, ../sass/styles.scss */
+/* line 7, ../sass/events/_messages.scss */
+.message {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  content: '';
+  background-color: rgba(0, 0, 0, 0.75);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 18, ../sass/events/_messages.scss */
+.message__wrap {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 90%;
+  max-width: 450px;
+  min-height: 200px;
+  padding: 0;
+  margin: auto;
+  color: #fff;
+  background: #161616;
+  border: 2px solid #444;
+  -moz-box-shadow: #222 0 0 50px;
+  -webkit-box-shadow: #222 0 0 50px;
+  box-shadow: #222 0 0 50px;
+}
+
+/* line 33, ../sass/events/_messages.scss */
+.message__item {
+  padding: 2em;
+}
+
+/* line 37, ../sass/events/_messages.scss */
+.message__item-close {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.75;
+  width: 1.75em;
+  height: 1.75em;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #F47821;
+  background: #f7f5fa;
+  -moz-transition: color, background 500ms ease-out;
+  -o-transition: color, background 500ms ease-out;
+  -webkit-transition: color, background 500ms ease-out;
+  transition: color, background 500ms ease-out;
+}
+/* line 18, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.message__item-close:visited {
+  color: #F47821;
+}
+/* line 21, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.message__item-close:focus {
+  color: #f7f5fa;
+}
+/* line 24, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.message__item-close:hover {
+  color: #f7f5fa;
+}
+/* line 27, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.message__item-close:active {
+  color: #f7f5fa;
+}
+/* line 138, ../sass/_custom.scss */
+.message__item-close:visited {
+  background: #f7f5fa;
+}
+/* line 143, ../sass/_custom.scss */
+.message__item-close:focus {
+  background: #F47821;
+}
+/* line 148, ../sass/_custom.scss */
+.message__item-close:hover {
+  background: #F47821;
+}
+/* line 153, ../sass/_custom.scss */
+.message__item-close:active {
+  background: #F47821;
+}
+/* line 55, ../sass/events/_messages.scss */
+.message__item-close::after {
+  content: 'x';
+  display: block;
+}
+
+/* line 61, ../sass/events/_messages.scss */
+.message__item-title {
+  padding: 10px 0 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+}
+/* line 66, ../sass/events/_messages.scss */
+.message__item-title h6 {
+  margin: 0;
+}
+
+/* line 72, ../sass/events/_messages.scss */
+.message__item-messages p {
+  line-height: 1.25;
+  margin: 0 0 1em 2em;
+}
+/* line 76, ../sass/events/_messages.scss */
+.message__item-messages p.label {
+  margin: 0;
+  text-decoration: underline;
+}
+
+/* line 87, ../sass/events/_messages.scss */
+.show, .message.show {
+  display: block;
+}
+
+/* line 90, ../sass/events/_messages.scss */
+.hode {
+  display: none;
+}
+
+/* line 12, ../sass/styles.scss */
 #page {
   width: 100%;
 }
 
-/* line 14, ../sass/styles.scss */
+/* line 15, ../sass/styles.scss */
 .container {
   margin: 0 auto;
   position: relative;
 }
 
-/* line 22, ../sass/styles.scss */
+/* line 23, ../sass/styles.scss */
 #benefits,
 #conditions {
   background: #F7F5FA;
 }
 
-/* line 28, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 #header {
   position: relative;
   text-align: center;
 }
 
-/* line 32, ../sass/styles.scss */
+/* line 33, ../sass/styles.scss */
 .header-content {
   text-align: center;
 }
 
-/* line 36, ../sass/styles.scss */
+/* line 37, ../sass/styles.scss */
 a.button {
   position: relative;
   display: inline-block;
@@ -465,7 +596,7 @@ a.button {
   -webkit-transition-property: none;
   transition-property: none;
 }
-/* line 56, ../sass/styles.scss */
+/* line 57, ../sass/styles.scss */
 a.button::before, a.button::after {
   position: absolute;
   left: 0;
@@ -475,7 +606,7 @@ a.button::before, a.button::after {
   height: 54px;
   line-height: 54px;
 }
-/* line 67, ../sass/styles.scss */
+/* line 68, ../sass/styles.scss */
 a.button::before {
   content: '';
   background: rgba(136, 136, 136, 0.15);
@@ -488,7 +619,7 @@ a.button::before {
   transition: width 300ms ease-out;
   z-index: -1;
 }
-/* line 75, ../sass/styles.scss */
+/* line 76, ../sass/styles.scss */
 a.button::after {
   content: '+';
   font-size: 27px;
@@ -496,22 +627,22 @@ a.button::after {
   text-align: center;
   color: #F47821;
 }
-/* line 82, ../sass/styles.scss */
+/* line 83, ../sass/styles.scss */
 a.button:hover::before, a.button:focus::before {
   width: 100%;
 }
 
-/* line 91, ../sass/styles.scss */
+/* line 92, ../sass/styles.scss */
 #sub-head {
   line-height: 1;
   overflow: hidden;
 }
-/* line 95, ../sass/styles.scss */
+/* line 96, ../sass/styles.scss */
 #sub-head .content {
   position: relative;
   left: 50%;
 }
-/* line 99, ../sass/styles.scss */
+/* line 100, ../sass/styles.scss */
 #sub-head img {
   position: relative;
   -moz-transform: translate(-50%, 0);
@@ -520,7 +651,7 @@ a.button:hover::before, a.button:focus::before {
   transform: translate(-50%, 0);
 }
 
-/* line 107, ../sass/styles.scss */
+/* line 108, ../sass/styles.scss */
 .condition-list {
   background: #fff;
   border-top: 1px solid #EDEDED;
@@ -530,39 +661,39 @@ a.button:hover::before, a.button:focus::before {
   margin: 0 auto;
 }
 
-/* line 117, ../sass/styles.scss */
+/* line 118, ../sass/styles.scss */
 .condition .content {
   border-right: 1px solid #EDEDED;
   border-bottom: 1px solid #EDEDED;
 }
 
-/* line 129, ../sass/styles.scss */
+/* line 130, ../sass/styles.scss */
 .benefit {
   margin-top: 20px;
 }
-/* line 131, ../sass/styles.scss */
+/* line 132, ../sass/styles.scss */
 .benefit .content {
   max-width: 335px;
   padding-top: 52px;
   background: url(img/money.png) no-repeat;
 }
 
-/* line 143, ../sass/styles.scss */
+/* line 144, ../sass/styles.scss */
 #footer {
   color: #fff;
   background: #161616;
 }
-/* line 148, ../sass/styles.scss */
+/* line 149, ../sass/styles.scss */
 #footer .form-items {
   counter-reset: form-list;
   padding: 10px 0 0;
   margin: 0 0 60px;
 }
-/* line 153, ../sass/styles.scss */
+/* line 154, ../sass/styles.scss */
 #footer .form-items label {
   font-size: 16px;
 }
-/* line 156, ../sass/styles.scss */
+/* line 157, ../sass/styles.scss */
 #footer .form-items input,
 #footer .form-items textarea {
   line-height: 1.458;
@@ -571,15 +702,15 @@ a.button:hover::before, a.button:focus::before {
   color: inherit;
   background: transparent;
 }
-/* line 167, ../sass/styles.scss */
+/* line 168, ../sass/styles.scss */
 #footer .form-type-button input {
   width: 100%;
 }
-/* line 171, ../sass/styles.scss */
+/* line 172, ../sass/styles.scss */
 #footer .form-item {
   position: relative;
 }
-/* line 174, ../sass/styles.scss */
+/* line 175, ../sass/styles.scss */
 #footer .form-item::before {
   counter-increment: form-list;
   content: counter(form-list);
@@ -595,22 +726,22 @@ a.button:hover::before, a.button:focus::before {
   border-radius: 50%;
   border: 1px solid #444;
 }
-/* line 187, ../sass/styles.scss */
+/* line 188, ../sass/styles.scss */
 #footer .form-item:last-child {
   margin-bottom: 0;
 }
 
-/* line 199, ../sass/styles.scss */
+/* line 200, ../sass/styles.scss */
 .gmap {
   line-height: 0;
 }
 
-/* line 201, ../sass/styles.scss */
+/* line 202, ../sass/styles.scss */
 .sel {
   color: #F47821;
 }
 
-/* line 204, ../sass/styles.scss */
+/* line 205, ../sass/styles.scss */
 .clearfix {
   *zoom: 1;
 }
@@ -619,110 +750,6 @@ a.button:hover::before, a.button:focus::before {
   content: "";
   display: table;
   clear: both;
-}
-
-/* line 212, ../sass/styles.scss */
-.overlay {
-  position: fixed;
-  content: '';
-  background-color: rgba(0, 0, 0, 0.75);
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-/* line 216, ../sass/styles.scss */
-.overlay .wrapper {
-  width: 90%;
-  max-width: 450px;
-  min-height: 200px;
-  padding: 0;
-  margin: auto;
-  color: #fff;
-  background: #161616;
-  border: 2px solid #444;
-  position: relative;
-  top: 50%;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-/* line 230, ../sass/styles.scss */
-.overlay .content {
-  padding: 2em;
-}
-/* line 234, ../sass/styles.scss */
-.overlay .title {
-  padding: 10px 0 15px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #444;
-}
-/* line 240, ../sass/styles.scss */
-.overlay p {
-  margin: 0 0 0.5em 2em;
-}
-/* line 244, ../sass/styles.scss */
-.overlay .close,
-.overlay .remove {
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  line-height: 1.5;
-  width: 1.5em;
-  height: 1.5em;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #F47821;
-  background: #fff;
-  -moz-transition: color 500ms ease-out;
-  -o-transition: color 500ms ease-out;
-  -webkit-transition: color 500ms ease-out;
-  transition: color 500ms ease-out;
-}
-/* line 18, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.overlay .close:visited,
-.overlay .remove:visited {
-  color: #F47821;
-}
-/* line 21, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.overlay .close:focus,
-.overlay .remove:focus {
-  color: #fff;
-}
-/* line 24, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.overlay .close:hover,
-.overlay .remove:hover {
-  color: #fff;
-}
-/* line 27, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.overlay .close:active,
-.overlay .remove:active {
-  color: #fff;
-}
-/* line 130, ../sass/_custom.scss */
-.overlay .close:visited,
-.overlay .remove:visited {
-  background: #fff;
-}
-/* line 135, ../sass/_custom.scss */
-.overlay .close:focus,
-.overlay .remove:focus {
-  background: #F47821;
-}
-/* line 140, ../sass/_custom.scss */
-.overlay .close:hover,
-.overlay .remove:hover {
-  background: #F47821;
-}
-/* line 145, ../sass/_custom.scss */
-.overlay .close:active,
-.overlay .remove:active {
-  background: #F47821;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,93 @@
+
+@import 'base';
+
+
+// USER MESSAGE
+
+.message {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  @include style-overlay(rgba(#000, 0.75));
+
+  &.show {
+    @extend .show;
+  }
+}
+
+.message__wrap {
+  position: relative;
+  top: 50%;
+  @include translateY(-50%);
+  width: 90%;
+  max-width: 450px;
+  min-height: 200px;
+  padding: 0;
+  margin: auto;
+  color: $message_color;
+  background: $message_bg;
+  border: 2px solid $message_border;
+  @include box-shadow($message_shadow 0 0 50px);
+}
+
+.message__item {
+  padding: 2em;
+}
+
+.message__item-close {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.75;
+  width: 1.75em;
+  height: 1.75em;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @include link-colors($link_color, $message_close_bg, $message_close_bg, $link_color, $message_close_bg);
+  @include link-bg($message_close_bg, $link_color, $link_color, $message_close_bg, $link_color);
+  @include transition(color,background 500ms ease-out);
+
+  &::after {
+    content: 'x';
+    display: block;
+  }
+}
+
+.message__item-title {
+  padding: 10px 0 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid  $border_form;
+
+  h6 {
+    margin: 0;
+  }
+}
+
+.message__item-messages {
+  p {
+    line-height: 1.25;
+    margin: 0 0 1em 2em;
+
+    &.label {
+      margin: 0;
+      text-decoration: underline;
+    }
+  }
+}
+
+
+
+
+// EVVENTS
+.show {
+  display: block;
+}
+.hode {
+  display: none;
+}
+
