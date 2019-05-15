@@ -1,7 +1,4 @@
 
-@import 'base';
-
-
 // USER MESSAGE
 
 .message {
@@ -10,9 +7,9 @@
   z-index: 10;
   @include style-overlay(rgba(#000, 0.75));
 
-  &.show {
-    @extend .show;
-  }
+  // &.show {
+    @extend %show;
+  // }
 }
 
 .message__wrap {
@@ -83,11 +80,4 @@
 
 
 
-// EVVENTS
-.show {
-  display: block;
-}
-.hode {
-  display: none;
-}
 

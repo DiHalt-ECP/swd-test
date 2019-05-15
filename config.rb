@@ -18,7 +18,7 @@ output_style = :expanded
 relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
-# line_comments = false
+line_comments = false
 
 
 # If you prefer the indented syntax, you might want to regenerate this
@@ -29,13 +29,13 @@ relative_assets = true
 
 
 # sass_options = {:debug_info => true}
-# sass_options = {:unix_newlines => true}
+sass_options = {:unix_newlines => true}
 # sass_options.merge!({:debug_info => true})  
 
 
 # Line Comments
 # -----------------------------------------------------------------------------
-line_comments = true
+# line_comments = true
 
 
 # Sourcemaps

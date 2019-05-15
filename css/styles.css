@@ -4,7 +4,6 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
  */
 @import url(fonts/stylesheet.css);
-/* line 5, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -26,45 +25,37 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -79,13 +70,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url('fonts/roboto-bold.ttf?1357678800') format('truetype');
   font-weight: 700;
 }
-/* line 7, ../sass/_reset.scss */
 ::-moz-focus-outer, ::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
 
-/* line 12, ../sass/_reset.scss */
 html,
 body {
   font-size: 16px;
@@ -98,41 +87,33 @@ body {
   color: #4A4556;
 }
 
-/* line 21, ../sass/_reset.scss */
 body {
   scroll-behavior: smooth;
 }
 
-/* line 3, ../sass/heading/_heading.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: "DIN Pro";
   font-weight: normal;
 }
 
-/* line 8, ../sass/heading/_heading.scss */
 h1, h3 {
   text-align: center;
 }
 
-/* line 12, ../sass/heading/_heading.scss */
 h1, h2 {
   color: #222;
 }
-/* line 14, ../sass/heading/_heading.scss */
 #footer h1, #footer h2 {
   color: #fff;
 }
 
-/* line 19, ../sass/heading/_heading.scss */
 h3, h5 {
   color: #000;
 }
-/* line 21, ../sass/heading/_heading.scss */
 #footer h3, #footer h5 {
   color: #fff;
 }
 
-/* line 28, ../sass/heading/_heading.scss */
 h5 {
   font-size: 20px;
   font-weight: bold;
@@ -141,7 +122,6 @@ h5 {
   margin: 30px 0;
   position: relative;
 }
-/* line 35, ../sass/heading/_heading.scss */
 h5::after {
   content: '';
   display: block;
@@ -151,7 +131,6 @@ h5::after {
   border-bottom: 2px solid #F47821;
 }
 
-/* line 44, ../sass/heading/_heading.scss */
 h6 {
   font-size: 12px;
   font-weight: bold;
@@ -162,38 +141,31 @@ h6 {
   margin: 0 0 10px;
 }
 
-/* line 28, ../sass/_reset.scss */
 figure {
   overflow: hidden;
 }
-/* line 30, ../sass/_reset.scss */
 figure img {
   display: block;
 }
 
-/* line 34, ../sass/_reset.scss */
 img {
   max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
 
-/* line 40, ../sass/_reset.scss */
 b, strong {
   font-weight: 700;
 }
 
-/* line 43, ../sass/_reset.scss */
 i, em {
   font-style: italic;
 }
 
-/* line 47, ../sass/_reset.scss */
 p, pre {
   margin: 0 0 1.5em;
 }
 
-/* line 55, ../sass/_reset.scss */
 a {
   color: #F47821;
   -moz-transition: all 300ms ease-out;
@@ -203,24 +175,19 @@ a {
   text-decoration: none;
   outline: none;
 }
-/* line 18, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 a:visited {
   color: #F47821;
 }
-/* line 21, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 a:focus {
   color: #a74a08;
 }
-/* line 24, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 a:hover {
   color: #a74a08;
 }
-/* line 27, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 a:active {
   color: #a74a08;
 }
 
-/* line 4, ../sass/forms/_forms.scss */
 input,
 label,
 select,
@@ -230,7 +197,6 @@ textarea {
   outline: 0;
 }
 
-/* line 13, ../sass/forms/_forms.scss */
 label {
   font-family: "DIN Pro";
   font-size: inherit;
@@ -238,7 +204,6 @@ label {
   margin: 0px 0 5px;
 }
 
-/* line 19, ../sass/forms/_forms.scss */
 textarea,
 input[type="text"] {
   font-family: inherit;
@@ -249,23 +214,19 @@ input[type="text"] {
   border-bottom-width: 2px;
   resize: none;
 }
-/* line 29, ../sass/forms/_forms.scss */
 textarea.error,
 input[type="text"].error {
   border-bottom-color: #944;
 }
-/* line 32, ../sass/forms/_forms.scss */
 textarea.pass,
 input[type="text"].pass {
   border-bottom-color: #494;
 }
 
-/* line 38, ../sass/forms/_forms.scss */
 input[type="radio"],
 input[type="checkbox"] {
   display: none;
 }
-/* line 41, ../sass/forms/_forms.scss */
 input[type="radio"] + label,
 input[type="checkbox"] + label {
   position: relative;
@@ -276,7 +237,6 @@ input[type="checkbox"] + label {
   -ms-user-select: none;
   user-select: none;
 }
-/* line 47, ../sass/forms/_forms.scss */
 input[type="radio"] + label::before,
 input[type="checkbox"] + label::before {
   content: '';
@@ -296,7 +256,6 @@ input[type="checkbox"] + label::before {
   -webkit-transition: all 0.2s, border-color 0.1s;
   transition: all 0.2s, border-color 0.1s;
 }
-/* line 64, ../sass/forms/_forms.scss */
 input[type="radio"]:checked + label::before,
 input[type="checkbox"]:checked + label::before {
   width: 6px;
@@ -314,14 +273,12 @@ input[type="checkbox"]:checked + label::before {
   transform: rotate(35deg);
 }
 
-/* line 76, ../sass/forms/_forms.scss */
 input[type="radio"] + label::before {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
 
-/* line 81, ../sass/forms/_forms.scss */
 button,
 input[type="button"],
 input[type="submit"] {
@@ -346,79 +303,223 @@ input[type="submit"] {
   -webkit-transition: color 300ms ease-out, background 300ms ease-out;
   transition: color 300ms ease-out, background 300ms ease-out;
 }
-/* line 18, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 button:visited,
 input[type="button"]:visited,
 input[type="submit"]:visited {
   color: #F47821;
 }
-/* line 21, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 button:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus {
   color: #fff;
 }
-/* line 24, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
   color: #fff;
 }
-/* line 27, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
   color: #fff;
 }
-/* line 138, ../sass/_custom.scss */
 button:visited,
 input[type="button"]:visited,
 input[type="submit"]:visited {
   background: #fff;
 }
-/* line 143, ../sass/_custom.scss */
 button:focus,
 input[type="button"]:focus,
 input[type="submit"]:focus {
   background: #F47821;
 }
-/* line 148, ../sass/_custom.scss */
 button:hover,
 input[type="button"]:hover,
 input[type="submit"]:hover {
   background: #F47821;
 }
-/* line 153, ../sass/_custom.scss */
 button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
   background: #F47821;
 }
-/* line 103, ../sass/forms/_forms.scss */
 button:active,
 input[type="button"]:active,
 input[type="submit"]:active {
   top: 2px;
 }
 
-/* line 108, ../sass/forms/_forms.scss */
 .form-item {
   margin: 0 0 35px;
 }
 
-/* line 112, ../sass/forms/_forms.scss */
 .form-type-text label,
 .form-type-textarea label {
   display: block;
 }
 
-/* line 116, ../sass/forms/_forms.scss */
 .form-type-button {
   margin: 0 auto;
   text-align: center;
 }
 
-/* line 7, ../sass/events/_messages.scss */
+#page {
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  position: relative;
+}
+
+#benefits,
+#conditions {
+  background: #F7F5FA;
+}
+
+#header {
+  position: relative;
+  text-align: center;
+}
+
+.header-content {
+  text-align: center;
+}
+
+a.button {
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #222;
+  background-color: transparent;
+  margin: 10px 0 0;
+  padding: 0 30px 0 45px;
+  height: 54px;
+  line-height: 54px;
+  z-index: 1;
+  -moz-transition-property: none;
+  -o-transition-property: none;
+  -webkit-transition-property: none;
+  transition-property: none;
+}
+a.button::before, a.button::after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 54px;
+  height: 54px;
+  line-height: 54px;
+}
+a.button::before {
+  content: '';
+  background: rgba(136, 136, 136, 0.15);
+  -moz-border-radius: 100px;
+  -webkit-border-radius: 100px;
+  border-radius: 100px;
+  -moz-transition: width 300ms ease-out;
+  -o-transition: width 300ms ease-out;
+  -webkit-transition: width 300ms ease-out;
+  transition: width 300ms ease-out;
+  z-index: -1;
+}
+a.button::after {
+  content: '+';
+  font-size: 27px;
+  font-weight: normal;
+  text-align: center;
+  color: #F47821;
+}
+a.button:hover::before, a.button:focus::before {
+  width: 100%;
+}
+
+#sub-head {
+  line-height: 1;
+  overflow: hidden;
+}
+#sub-head .content {
+  position: relative;
+  left: 50%;
+}
+#sub-head img {
+  position: relative;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+
+.condition-list {
+  background: #fff;
+  border-top: 1px solid #EDEDED;
+  border-left: 1px solid #EDEDED;
+  position: relative;
+  top: -100px;
+  margin: 0 auto;
+}
+
+.condition .content {
+  border-right: 1px solid #EDEDED;
+  border-bottom: 1px solid #EDEDED;
+}
+
+.benefit {
+  margin-top: 20px;
+}
+.benefit .content {
+  max-width: 335px;
+  padding-top: 52px;
+  background: url(img/money.png) no-repeat;
+}
+
+#footer {
+  color: #fff;
+  background: #161616;
+}
+#footer .form-items {
+  counter-reset: form-list;
+  padding: 10px 0 0;
+  margin: 0 0 60px;
+}
+#footer .form-items label {
+  font-size: 16px;
+}
+#footer .form-items input,
+#footer .form-items textarea {
+  line-height: 1.458;
+  font-style: normal;
+  font-weight: normal;
+  color: inherit;
+  background: transparent;
+}
+#footer .form-type-button input {
+  width: 100%;
+}
+#footer .form-item {
+  position: relative;
+}
+#footer .form-item::before {
+  counter-increment: form-list;
+  content: counter(form-list);
+  color: #F47821;
+  font-size: 20px;
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #444;
+}
+#footer .form-item:last-child {
+  margin-bottom: 0;
+}
+
 .message {
   display: none;
   position: fixed;
@@ -433,7 +534,6 @@ input[type="submit"]:active {
   height: 100%;
 }
 
-/* line 18, ../sass/events/_messages.scss */
 .message__wrap {
   position: relative;
   top: 50%;
@@ -454,12 +554,10 @@ input[type="submit"]:active {
   box-shadow: #222 0 0 50px;
 }
 
-/* line 33, ../sass/events/_messages.scss */
 .message__item {
   padding: 2em;
 }
 
-/* line 37, ../sass/events/_messages.scss */
 .message__item-close {
   font-size: 1em;
   font-weight: bold;
@@ -479,273 +577,68 @@ input[type="submit"]:active {
   -webkit-transition: color, background 500ms ease-out;
   transition: color, background 500ms ease-out;
 }
-/* line 18, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 .message__item-close:visited {
   color: #F47821;
 }
-/* line 21, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 .message__item-close:focus {
   color: #f7f5fa;
 }
-/* line 24, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 .message__item-close:hover {
   color: #f7f5fa;
 }
-/* line 27, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
 .message__item-close:active {
   color: #f7f5fa;
 }
-/* line 138, ../sass/_custom.scss */
 .message__item-close:visited {
   background: #f7f5fa;
 }
-/* line 143, ../sass/_custom.scss */
 .message__item-close:focus {
   background: #F47821;
 }
-/* line 148, ../sass/_custom.scss */
 .message__item-close:hover {
   background: #F47821;
 }
-/* line 153, ../sass/_custom.scss */
 .message__item-close:active {
   background: #F47821;
 }
-/* line 55, ../sass/events/_messages.scss */
 .message__item-close::after {
   content: 'x';
   display: block;
 }
 
-/* line 61, ../sass/events/_messages.scss */
 .message__item-title {
   padding: 10px 0 15px;
   margin-bottom: 20px;
   border-bottom: 1px solid #444;
 }
-/* line 66, ../sass/events/_messages.scss */
 .message__item-title h6 {
   margin: 0;
 }
 
-/* line 72, ../sass/events/_messages.scss */
 .message__item-messages p {
   line-height: 1.25;
   margin: 0 0 1em 2em;
 }
-/* line 76, ../sass/events/_messages.scss */
 .message__item-messages p.label {
   margin: 0;
   text-decoration: underline;
 }
 
-/* line 87, ../sass/events/_messages.scss */
-.show, .message.show {
+.show.message {
   display: block;
 }
 
-/* line 90, ../sass/events/_messages.scss */
-.hode {
-  display: none;
-}
-
-/* line 12, ../sass/styles.scss */
-#page {
-  width: 100%;
-}
-
-/* line 15, ../sass/styles.scss */
-.container {
-  margin: 0 auto;
-  position: relative;
-}
-
-/* line 23, ../sass/styles.scss */
-#benefits,
-#conditions {
-  background: #F7F5FA;
-}
-
-/* line 29, ../sass/styles.scss */
-#header {
-  position: relative;
-  text-align: center;
-}
-
-/* line 33, ../sass/styles.scss */
-.header-content {
-  text-align: center;
-}
-
-/* line 37, ../sass/styles.scss */
-a.button {
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #222;
-  background-color: transparent;
-  margin: 10px 0 0;
-  padding: 0 30px 0 45px;
-  height: 54px;
-  line-height: 54px;
-  z-index: 1;
-  -moz-transition-property: none;
-  -o-transition-property: none;
-  -webkit-transition-property: none;
-  transition-property: none;
-}
-/* line 57, ../sass/styles.scss */
-a.button::before, a.button::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 54px;
-  height: 54px;
-  line-height: 54px;
-}
-/* line 68, ../sass/styles.scss */
-a.button::before {
-  content: '';
-  background: rgba(136, 136, 136, 0.15);
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  -moz-transition: width 300ms ease-out;
-  -o-transition: width 300ms ease-out;
-  -webkit-transition: width 300ms ease-out;
-  transition: width 300ms ease-out;
-  z-index: -1;
-}
-/* line 76, ../sass/styles.scss */
-a.button::after {
-  content: '+';
-  font-size: 27px;
-  font-weight: normal;
-  text-align: center;
-  color: #F47821;
-}
-/* line 83, ../sass/styles.scss */
-a.button:hover::before, a.button:focus::before {
-  width: 100%;
-}
-
-/* line 92, ../sass/styles.scss */
-#sub-head {
-  line-height: 1;
-  overflow: hidden;
-}
-/* line 96, ../sass/styles.scss */
-#sub-head .content {
-  position: relative;
-  left: 50%;
-}
-/* line 100, ../sass/styles.scss */
-#sub-head img {
-  position: relative;
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
-}
-
-/* line 108, ../sass/styles.scss */
-.condition-list {
-  background: #fff;
-  border-top: 1px solid #EDEDED;
-  border-left: 1px solid #EDEDED;
-  position: relative;
-  top: -100px;
-  margin: 0 auto;
-}
-
-/* line 118, ../sass/styles.scss */
-.condition .content {
-  border-right: 1px solid #EDEDED;
-  border-bottom: 1px solid #EDEDED;
-}
-
-/* line 130, ../sass/styles.scss */
-.benefit {
-  margin-top: 20px;
-}
-/* line 132, ../sass/styles.scss */
-.benefit .content {
-  max-width: 335px;
-  padding-top: 52px;
-  background: url(img/money.png) no-repeat;
-}
-
-/* line 144, ../sass/styles.scss */
-#footer {
-  color: #fff;
-  background: #161616;
-}
-/* line 149, ../sass/styles.scss */
-#footer .form-items {
-  counter-reset: form-list;
-  padding: 10px 0 0;
-  margin: 0 0 60px;
-}
-/* line 154, ../sass/styles.scss */
-#footer .form-items label {
-  font-size: 16px;
-}
-/* line 157, ../sass/styles.scss */
-#footer .form-items input,
-#footer .form-items textarea {
-  line-height: 1.458;
-  font-style: normal;
-  font-weight: normal;
-  color: inherit;
-  background: transparent;
-}
-/* line 168, ../sass/styles.scss */
-#footer .form-type-button input {
-  width: 100%;
-}
-/* line 172, ../sass/styles.scss */
-#footer .form-item {
-  position: relative;
-}
-/* line 175, ../sass/styles.scss */
-#footer .form-item::before {
-  counter-increment: form-list;
-  content: counter(form-list);
-  color: #F47821;
-  font-size: 20px;
-  text-align: center;
-  display: block;
-  position: absolute;
-  top: 0.5em;
-  left: 0;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  border: 1px solid #444;
-}
-/* line 188, ../sass/styles.scss */
-#footer .form-item:last-child {
-  margin-bottom: 0;
-}
-
-/* line 200, ../sass/styles.scss */
 .gmap {
   line-height: 0;
 }
 
-/* line 202, ../sass/styles.scss */
 .sel {
   color: #F47821;
 }
 
-/* line 205, ../sass/styles.scss */
 .clearfix {
   *zoom: 1;
 }
-/* line 38, ../../../../Ruby-x64/lib/ruby/gems/2.6.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
 .clearfix:after {
   content: "";
   display: table;

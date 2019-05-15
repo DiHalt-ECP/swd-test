@@ -5,8 +5,12 @@
  */
 
 @import 'base';
+
+// -----------------------------------------------------------------------------
+// This file provides a CSS reset/normalize generated based on the legacy variables.
+// -----------------------------------------------------------------------------
 @import 'reset';
-@import 'events/messages';
+
 
 
 #page {
@@ -192,6 +196,14 @@ a.button {
 
 }
 
+
+// -----------------------------------------------------------------------------
+// Message block for User
+// -----------------------------------------------------------------------------
+@import 'messages/messages';
+
+// Import element states defined for your theme
+@import 'states/states';
 
 
 

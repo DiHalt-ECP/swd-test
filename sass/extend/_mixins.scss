@@ -1,0 +1,80 @@
+//
+// Custom sass mixins
+//
+// Mixins
+// -----------------------------------------------------------------------------
+// To use a mixin in this file, add this line to the top of your .scss file:
+//   @import "base"; (_base.scss imports _custom.scss).
+//
+// Then to use a mixin for a particular rule, add this inside the ruleset's
+// curly brackets:
+//   @include mix-in-name;
+//
+
+
+//
+// Hide content element
+//
+@mixin element-hidden {
+  display: none;
+}
+
+//
+// Show content element
+//
+@mixin element-block {
+  display: block;
+}
+
+
+// Name style-overlay
+// Add styles for create overlay layer
+// -----------------------------------------------------------------------------
+@mixin style-overlay($bg: rgba(#000, 0.5)) {
+  content: '';
+  background-color: $bg;
+  // position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+@mixin user-select($select) {
+  // @each $pre in -webkit-, -moz-, -ms-, -o- {
+  @each $pre in -webkit-, -moz-, -ms- {
+    #{$pre + user-select}: #{$select};
+  }
+  #{user-select}: #{$select};
+}
+
+
+//
+// Link Background helper
+// -----------------------------------------------------------------------------
+@mixin link-bg($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+  background: $normal;
+  @if $visited {
+    &:visited {
+      background: $visited;
+    }
+  }
+  @if $focus {
+    &:focus {
+      background: $focus;
+    }
+  }
+  @if $hover {
+    &:hover {
+      background: $hover;
+    }
+  }
+  @if $active {
+    &:active {
+      background: $active;
+    }
+  }
+}

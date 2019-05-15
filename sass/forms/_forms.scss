@@ -1,4 +1,4 @@
-  @import 'base';
+// @import 'base';
 
 // FORM
 input,
@@ -29,6 +29,7 @@ input[type="text"] {
   &.error {
     border-bottom-color: $border_form_err;
   }
+
   &.pass {
     border-bottom-color: $border_form_pass;
   }
