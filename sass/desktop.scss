@@ -1,9 +1,8 @@
 
-@import 'base';
-@import 'heading/_heading-desktop.scss';
+$type:  desktop;
 
-body {
-}
+// Settings & Mixins
+@import 'base/base';
 
 #page {
   .container {

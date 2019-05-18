@@ -1,8 +1,3 @@
-/* Welcome to Compass.
- * In this file you should write your main styles. (or centralize your imports)
- * Import this file using the following HTML or equivalent:
- * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
- */
 @import url(fonts/stylesheet.css);
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -70,27 +65,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   src: url('fonts/roboto-bold.ttf?1357678800') format('truetype');
   font-weight: 700;
 }
-::-moz-focus-outer, ::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-
-html,
-body {
-  font-size: 16px;
-  font-family: "Roboto", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
-  line-height: 1.625;
-  -moz-box-sizing: border-box;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  background: #fff;
-  color: #4A4556;
-}
-
-body {
-  scroll-behavior: smooth;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: "DIN Pro";
   font-weight: normal;
@@ -139,53 +113,6 @@ h6 {
   color: #F47821;
   line-height: 1.5833em;
   margin: 0 0 10px;
-}
-
-figure {
-  overflow: hidden;
-}
-figure img {
-  display: block;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-b, strong {
-  font-weight: 700;
-}
-
-i, em {
-  font-style: italic;
-}
-
-p, pre {
-  margin: 0 0 1.5em;
-}
-
-a {
-  color: #F47821;
-  -moz-transition: all 300ms ease-out;
-  -o-transition: all 300ms ease-out;
-  -webkit-transition: all 300ms ease-out;
-  transition: all 300ms ease-out;
-  text-decoration: none;
-  outline: none;
-}
-a:visited {
-  color: #F47821;
-}
-a:focus {
-  color: #a74a08;
-}
-a:hover {
-  color: #a74a08;
-}
-a:active {
-  color: #a74a08;
 }
 
 input,
@@ -361,6 +288,74 @@ input[type="submit"]:active {
 .form-type-button {
   margin: 0 auto;
   text-align: center;
+}
+
+::-moz-focus-outer, ::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Roboto", "Trebuchet MS", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  line-height: 1.625;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #fff;
+  color: #4A4556;
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+figure {
+  overflow: hidden;
+}
+figure img {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+i, em {
+  font-style: italic;
+}
+
+p, pre {
+  margin: 0 0 1.5em;
+}
+
+a {
+  color: #F47821;
+  -moz-transition: all 300ms ease-out;
+  -o-transition: all 300ms ease-out;
+  -webkit-transition: all 300ms ease-out;
+  transition: all 300ms ease-out;
+  text-decoration: none;
+  outline: none;
+}
+a:visited {
+  color: #F47821;
+}
+a:focus {
+  color: #a74a08;
+}
+a:hover {
+  color: #a74a08;
+}
+a:active {
+  color: #a74a08;
 }
 
 #page {

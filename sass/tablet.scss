@@ -1,10 +1,9 @@
 
-@import 'base';
-@import 'heading/_heading-mobile.scss';
+$type:  mobile;
 
+// Settings & Mixins
+@import 'base/base';
 
-body {
-}
 
 .container {
   padding-left: $gutter-width;

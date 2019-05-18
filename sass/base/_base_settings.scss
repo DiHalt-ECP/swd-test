@@ -8,9 +8,11 @@
 // find variables for colors, fonts and the global gutter width.
 //
 
-
-
+// Compass Setup Variables
+// -----------------------------------------------------------------------------
 $default-box-sizing: border-box;
+
+
 
 //
 // Color Variables
@@ -23,7 +25,6 @@ $page_bg_2:             #F7F5FA;        // content background second
 $color:                 #4A4556;
 $color_dark:            #222;
 $color_dark_2:          #000;
-
 
 $link_color:            #F47821;
 $link_color_h:          darken($link_color, 20%);
@@ -47,17 +48,10 @@ $message_shadow:        #222;
 $message_close_bg:      #f7f5fa;
 
 
+// -----------------------------------------------------------------------------
 // LAYOUT
+// -----------------------------------------------------------------------------
 $page_width:    1160px;
-
-
-// FONT weights
-$fw_light:  300;
-$fw_semi:   600;
-$fw_extra:  800;
-
-
-
 
 
 //
@@ -66,6 +60,20 @@ $fw_extra:  800;
 // theme settings for web safe fonts.
 // -----------------------------------------------------------------------------
 
+// FONT SIZE
+// -----------------------------------------------------------------------------
+// base size font
+$font-size: 16px;
+
+// FONT weights
+// -----------------------------------------------------------------------------
+$fw_light:  300;
+$fw_semi:   600;
+$fw_extra:  800;
+
+
+// FONT families
+// -----------------------------------------------------------------------------
 $ff_head:                     'DIN Pro';
 
 $sans-serif-small:            'Roboto', 'Trebuchet MS', 'Helvetica Neue', Arial, Helvetica, sans-serif;

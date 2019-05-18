@@ -11,10 +11,11 @@
 // Partials to be shared with all .scss files.
 //
 
+@import "compass/reset/utilities";              // If you want to control the reset, please use the mixins defined in the reset utilities module.
 @import 'compass/support';                      // Add Compass and IE vendor prefix support variables.
 @import 'compass/utilities/general/clearfix';   // Better than clearfix.
-// @import 'compass/utilities/sprites';             // See http://compass-style.org/help/tutorials/spriting/
-@import 'compass/css3';                          // Use one CSS3 mixin instead of multiple vendor prefixes.
+@import 'compass/utilities/sprites';            // See http://compass-style.org/help/tutorials/spriting/
+@import 'compass/css3';                         // Use one CSS3 mixin instead of multiple vendor prefixes.
 @import "compass/typography/links/link-colors"; // Those states not specified will inherit. Mixin to an anchor link like so: a +link-colors(#00c, #0cc, #c0c, #ccc, #cc0)
 @import "compass/typography/links";
 @import "compass/css3/border-radius";           // The border-radius mixin is used to give a block element rounded corners.
@@ -23,7 +24,10 @@
 // -----------------------------------------------------------------------------
 // Import custom partial - mixins and variables defined for your theme
 // -----------------------------------------------------------------------------
-@import 'extend/extend';
+@import 'base_settings';
+@import 'base_mixins';
 
+$type:  all !default;
 
+@import 'base_heading';
 
