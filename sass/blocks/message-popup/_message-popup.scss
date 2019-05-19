@@ -1,0 +1,21 @@
+
+// USER MESSAGE
+
+.message-popup {
+  display: none;
+  // position: fixed;
+  // z-index: 10;
+  @include style-overlay(rgba(#000, 0.75), fixed, 10);
+
+  // &.show {
+    @extend %show;
+  // }
+}
+
+
+
+
+
+
+
+

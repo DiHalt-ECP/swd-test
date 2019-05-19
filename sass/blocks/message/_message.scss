@@ -1,37 +1,26 @@
 
 // USER MESSAGE
 
-.message {
-  display: none;
-  position: fixed;
-  z-index: 10;
-  @include style-overlay(rgba(#000, 0.75));
-
-  // &.show {
-    @extend %show;
-  // }
-}
-
-.message__wrap {
+// mix - position inner of message-popup block
+.message-popup__message {
   position: relative;
   top: 50%;
   @include translateY(-50%);
   width: 90%;
   max-width: 450px;
   min-height: 200px;
-  padding: 0;
   margin: auto;
-  color: $message_color;
-  background: $message_bg;
   border: 2px solid $message_border;
   @include box-shadow($message_shadow 0 0 50px);
 }
 
-.message__item {
+.message {
+  color: $message_color;
+  background: $message_bg;
   padding: 2em;
 }
 
-.message__item-close {
+.message__close {
   font-size: 1em;
   font-weight: bold;
   text-align: center;
