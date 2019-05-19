@@ -127,7 +127,7 @@
       messageBox.addEventListener('click', close);
 
       function close(e) {
-        if (e.target !== this.querySelector('.message__item-close') && e.target !== this) {return}
+        if (e.target !== this.querySelector('.button-close') && e.target !== this) {return}
         this.removeEventListener('click', close);
         this.classList.remove('show');
       }

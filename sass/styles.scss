@@ -195,7 +195,8 @@ a.button {
 // Message block for User
 // -----------------------------------------------------------------------------
 @import 'blocks/message/message';
-@import 'blocks/message-popup/message-popup';
+@import 'blocks/button/button';
+@import 'blocks/popup-box/popup-box';
 
 // Import element states defined for your theme
 @import 'states/states';

@@ -2,7 +2,7 @@
 // USER MESSAGE
 
 // mix - position inner of message-popup block
-.message-popup__message {
+.popup-box__message {
   position: relative;
   top: 50%;
   @include translateY(-50%);
@@ -10,38 +10,14 @@
   max-width: 450px;
   min-height: 200px;
   margin: auto;
-  border: 2px solid $message_border;
   @include box-shadow($message_shadow 0 0 50px);
 }
 
 .message {
   color: $message_color;
   background: $message_bg;
+  border: 2px solid $message_border;
   padding: 2em;
-}
-
-.message__close {
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.75;
-  width: 1.75em;
-  height: 1.75em;
-  cursor: pointer;
-
-  position: absolute;
-  top: 0;
-  right: 0;
-
-  @include link-colors($link_color, $message_close_bg, $message_close_bg, $link_color, $message_close_bg);
-  @include link-bg($message_close_bg, $link_color, $link_color, $message_close_bg, $link_color);
-  @include transition(color,background 500ms ease-out);
-
-  &::after {
-    content: 'x';
-    display: block;
-  }
 }
 
 .message__item-title {

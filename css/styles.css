@@ -515,7 +515,7 @@ a.button:hover::before, a.button:focus::before {
   margin-bottom: 0;
 }
 
-.message-popup__message {
+.popup-box__message {
   position: relative;
   top: 50%;
   -moz-transform: translateY(-50%);
@@ -526,7 +526,6 @@ a.button:hover::before, a.button:focus::before {
   max-width: 450px;
   min-height: 200px;
   margin: auto;
-  border: 2px solid #444;
   -moz-box-shadow: #222 0 0 50px;
   -webkit-box-shadow: #222 0 0 50px;
   box-shadow: #222 0 0 50px;
@@ -535,55 +534,8 @@ a.button:hover::before, a.button:focus::before {
 .message {
   color: #fff;
   background: #161616;
+  border: 2px solid #444;
   padding: 2em;
-}
-
-.message__close {
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  line-height: 1.75;
-  width: 1.75em;
-  height: 1.75em;
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  right: 0;
-  color: #F47821;
-  background: #f7f5fa;
-  -moz-transition: color, background 500ms ease-out;
-  -o-transition: color, background 500ms ease-out;
-  -webkit-transition: color, background 500ms ease-out;
-  transition: color, background 500ms ease-out;
-}
-.message__close:visited {
-  color: #F47821;
-}
-.message__close:focus {
-  color: #f7f5fa;
-}
-.message__close:hover {
-  color: #f7f5fa;
-}
-.message__close:active {
-  color: #f7f5fa;
-}
-.message__close:visited {
-  background: #f7f5fa;
-}
-.message__close:focus {
-  background: #F47821;
-}
-.message__close:hover {
-  background: #F47821;
-}
-.message__close:active {
-  background: #F47821;
-}
-.message__close::after {
-  content: 'x';
-  display: block;
 }
 
 .message__item-title {
@@ -604,7 +556,56 @@ a.button:hover::before, a.button:focus::before {
   text-decoration: underline;
 }
 
-.message-popup {
+.button-close {
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.75;
+  width: 1.75em;
+  height: 1.75em;
+  overflow: hidden;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #F47821;
+  background: #f7f5fa;
+  -moz-transition: color, background 500ms ease-out;
+  -o-transition: color, background 500ms ease-out;
+  -webkit-transition: color, background 500ms ease-out;
+  transition: color, background 500ms ease-out;
+}
+.button-close:visited {
+  color: #F47821;
+}
+.button-close:focus {
+  color: #f7f5fa;
+}
+.button-close:hover {
+  color: #f7f5fa;
+}
+.button-close:active {
+  color: #f7f5fa;
+}
+.button-close:visited {
+  background: #f7f5fa;
+}
+.button-close:focus {
+  background: #F47821;
+}
+.button-close:hover {
+  background: #F47821;
+}
+.button-close:active {
+  background: #F47821;
+}
+.button-close::after {
+  content: 'x';
+  display: block;
+}
+
+.popup-box {
   display: none;
   content: '';
   background-color: rgba(0, 0, 0, 0.75);
@@ -618,7 +619,7 @@ a.button:hover::before, a.button:focus::before {
   z-index: 10;
 }
 
-.show.message-popup {
+.show.popup-box {
   display: block;
 }
 
