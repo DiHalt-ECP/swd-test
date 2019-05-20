@@ -6,6 +6,9 @@
 // -----------------------------------------------------------------------------
 @import 'base/base_reset';
 
+// MIX for stylize h6 title
+@import 'blocks/title-orange-stylize/title-orange-stylize';
+
 
 #page {
   width: 100%;
@@ -195,11 +198,9 @@ a.button {
 // Message block for User
 // -----------------------------------------------------------------------------
 @import 'blocks/message/message';
-@import 'blocks/button/button';
+@import 'blocks/button-close/button-close';
 @import 'blocks/popup-box/popup-box';
 
-// Import element states defined for your theme
-@import 'states/states';
 
 
 

@@ -108,9 +108,6 @@ h5::after {
 h6 {
   font-size: 12px;
   font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #F47821;
   line-height: 1.5833em;
   margin: 0 0 10px;
 }
@@ -358,6 +355,12 @@ a:active {
   color: #a74a08;
 }
 
+.title-orange-stylize {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #F47821;
+}
+
 #page {
   width: 100%;
 }
@@ -515,43 +518,29 @@ a.button:hover::before, a.button:focus::before {
   margin-bottom: 0;
 }
 
-.popup-box__message {
-  position: relative;
-  top: 50%;
-  -moz-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  width: 90%;
-  max-width: 450px;
-  min-height: 200px;
-  margin: auto;
-  -moz-box-shadow: #222 0 0 50px;
-  -webkit-box-shadow: #222 0 0 50px;
-  box-shadow: #222 0 0 50px;
-}
-
 .message {
   color: #fff;
   background: #161616;
   border: 2px solid #444;
-  padding: 2em;
 }
 
-.message__item-title {
+.message__header {
   padding: 10px 0 15px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   border-bottom: 1px solid #444;
 }
-.message__item-title h6 {
+
+.message__title {
   margin: 0;
 }
 
-.message__item-messages p {
+.message__item {
   line-height: 1.25;
+}
+.message__item_msg {
   margin: 0 0 1em 2em;
 }
-.message__item-messages p.label {
+.message__item_label {
   margin: 0;
   text-decoration: underline;
 }
@@ -606,7 +595,6 @@ a.button:hover::before, a.button:focus::before {
 }
 
 .popup-box {
-  display: none;
   content: '';
   background-color: rgba(0, 0, 0, 0.75);
   position: fixed;
@@ -619,8 +607,32 @@ a.button:hover::before, a.button:focus::before {
   z-index: 10;
 }
 
-.show.popup-box {
+.popup-box_hide {
+  display: none;
+}
+
+.popup-box_show {
   display: block;
+}
+
+.popup-box__message {
+  position: relative;
+  top: 50%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 90%;
+  max-width: 450px;
+  min-height: 200px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2em;
+  margin: auto;
+  -moz-box-shadow: #222 0 0 50px;
+  -webkit-box-shadow: #222 0 0 50px;
+  box-shadow: #222 0 0 50px;
 }
 
 .gmap {

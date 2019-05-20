@@ -1,44 +1,30 @@
 
 // USER MESSAGE
 
-// mix - position inner of message-popup block
-.popup-box__message {
-  position: relative;
-  top: 50%;
-  @include translateY(-50%);
-  width: 90%;
-  max-width: 450px;
-  min-height: 200px;
-  margin: auto;
-  @include box-shadow($message_shadow 0 0 50px);
-}
-
 .message {
   color: $message_color;
   background: $message_bg;
   border: 2px solid $message_border;
-  padding: 2em;
 }
 
-.message__item-title {
+.message__header {
   padding: 10px 0 15px;
-  margin-bottom: 20px;
+  margin: 0 0 20px;
   border-bottom: 1px solid  $border_form;
-
-  h6 {
-    margin: 0;
-  }
+}
+.message__title {
+  margin: 0;
 }
 
-.message__item-messages {
-  p {
-    line-height: 1.25;
-    margin: 0 0 1em 2em;
+.message__item {
+  line-height: 1.25;
 
-    &.label {
-      margin: 0;
-      text-decoration: underline;
-    }
+  &_msg {
+    margin: 0 0 1em 2em;
+  }
+  &_label {
+    margin: 0;
+    text-decoration: underline;
   }
 }
 

@@ -109,19 +109,19 @@
     // Show message for User.
     function showMessage(messages) {
       var messageBox = document.getElementById("message-user");
-      var messageContent = messageBox.querySelector('.message__item-messages');
+      var messageContent = messageBox.querySelector('.message__items');
       messageContent.innerHTML = '';
 
       // List of messages.
       messages = messages.filter(function(msg) {
         if (typeof msg !== 'string') {
-          msg.label && messageContent.appendChild(createTag('p', 'label', msg.label));
+          msg.label && messageContent.appendChild(createTag('p', 'message__item message__item_label', msg.label));
           msg = msg.text || '';
         }
-        messageContent.appendChild(createTag('p', 'msg', msg));
+        messageContent.appendChild(createTag('p', 'message__item message__item_msg', msg));
         return false;
       });
-      messageBox.classList.add('show');
+      messageBox.classList.toggle('popup-box_hide');
 
       // Close message popup.
       messageBox.addEventListener('click', close);
@@ -129,7 +129,9 @@
       function close(e) {
         if (e.target !== this.querySelector('.button-close') && e.target !== this) {return}
         this.removeEventListener('click', close);
-        this.classList.remove('show');
+        this.classList.toggle('popup-box_hide');
+        e.preventDefault();
+        return false;
       }
     }
 
