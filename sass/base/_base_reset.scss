@@ -14,8 +14,9 @@ body {
   font-family: $sans-serif-small;
   line-height: 1.625;
   @include box-sizing(border-box);
-  background: $page_bg;
   color: $color;
+  background: $page_bg;
+  height: 100%;
 }
 body {
   scroll-behavior: smooth;

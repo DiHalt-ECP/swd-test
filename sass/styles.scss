@@ -10,12 +10,17 @@
 @import 'blocks/title-orange-stylize/title-orange-stylize';
 
 
+
+@import 'blocks/header-top/header-top';
+@import 'blocks/container/container';
+
+
+
+
+
+
 #page {
   width: 100%;
-}
-.container {
-  margin: 0 auto;
-  position: relative;
 }
 
 
@@ -26,14 +31,6 @@
   background: $page_bg_2;
 }
 
-// HEADER
-#header {
-  position: relative;
-  text-align: center;
-}
-.header-content {
-  text-align: center;
-}
 
 a.button {
   $btn_size: 54px;
