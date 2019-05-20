@@ -4,17 +4,11 @@ $type:  mobile;
 // Settings & Mixins
 @import 'base/base';
 
-body {
-}
-
 #page {
   font-size: 16px;
 }
 
-.container {
-  padding-left: $gutter-width;
-  padding-right: $gutter-width;
-}
+@import 'blocks/container/container';
 
 
 

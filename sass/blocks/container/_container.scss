@@ -1,9 +1,15 @@
 
 
 // Container - page block wrapper
-.container {
-  margin: 0 auto;
 
-  // ?????????
-  // position: relative;
+$file_name: "container.#{$type}.scss";
+
+@import 'container.screen.scss';
+@import 'container.mobile.scss';
+// @import 'container.tablet.scss';
+// @import 'container.desktop.scss';
+
+.container {
+  @extend %container-#{$type};
 }
+

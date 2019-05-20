@@ -1,7 +1,12 @@
 
 
+// import font-faces
 @import 'base_reset_fonts';
+// reset html, body.
 @import 'base_reset_base';
+// set base styles to typograh - h1..h6.
 @import 'base_reset_heading';
+// set base styles to tags - a, b, p, img, ul, li  and etc.
 @import 'base_reset_tags';
+// set base styles to form tags - input, button textarea.
 @import 'base_reset_forms';
