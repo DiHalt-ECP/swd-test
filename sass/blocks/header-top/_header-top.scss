@@ -1,11 +1,62 @@
 
-// HEADER
+// HEADER-TOP
+//  .header-top - top header block.
+//  .header-top__site-title - h1 site name in header.
+//  .header-top__content - mix to position content in top header block - margin.
+//  .header-top__container - mix to position content in top header block - margin.
+// -----------------------------------------------------------------------------
+
+$name: "%header-top-#{$type}";
+$mods: "__site-title" "__container" "__content";
+
 .header-top {
+  @include cond-extend($name, $mods);
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADER-TOP styles of all media queries for style.css file.
+// -----------------------------------------------------------------------------
+%header-top-screen {
   // position: relative;
-  // text-align: center;
-}
-
-
-.header-top__content {
   text-align: center;
+
+  &__site-title {
+    color: $color_dark;
+    line-height: 1.125;
+  }
+  &__content {
+  }
 }
+
+
+// -----------------------------------------------------------------------------
+// HEADER-TOP styles for mobile file.
+// -----------------------------------------------------------------------------
+%header-top-mobile {
+  &__container {
+    margin: 140px auto 100px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADER-TOP styles for tablet file.
+// -----------------------------------------------------------------------------
+%header-top-tablet {
+  &__container {
+    margin: 140px auto 100px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADER-TOP styles for desktop file.
+// -----------------------------------------------------------------------------
+%header-top-desktop {
+  &__container {
+    margin: 165px auto 125px;
+  }
+}
+
+

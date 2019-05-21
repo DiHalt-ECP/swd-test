@@ -4,23 +4,14 @@ $type:  desktop;
 // Settings & Mixins
 @import 'base/base';
 
-#page {
-  .container {
-    max-width: $page_width;
-    margin: 0 auto;
-    padding-left: $gutter-width;
-    padding-right: $gutter-width;
-  }
-}
 
 
+@import 'blocks/container/container';
 // HEADER
-#header {
-  // padding: 120px 0;
-  .container {
-    margin: 165px auto 125px;
-  }
-}
+@import 'blocks/header-top/header-top';
+
+
+
 
 // SUB HEADER
 #sub-head {

@@ -1,6 +1,5 @@
 h1 {
   font-size: 48px;
-  line-height: 1.125;
   margin: 0.5em 0 0.5em;
 }
 
@@ -22,14 +21,11 @@ h4 {
   margin: 10px 0;
 }
 
-#page .container {
+.container__wrapper {
   max-width: 1160px;
-  margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 
-#header .container {
+.header-top__container {
   margin: 165px auto 125px;
 }
 

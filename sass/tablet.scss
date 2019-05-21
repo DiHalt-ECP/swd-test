@@ -1,23 +1,14 @@
 
-$type:  mobile;
+$type:  tablet;
 
 // Settings & Mixins
 @import 'base/base';
 
 
-.container {
-  padding-left: $gutter-width;
-  padding-right: $gutter-width;
-}
-
-
-
+@import 'blocks/container/container';
 // HEADER
-#header {
-  .container {
-    margin: 140px auto 100px;
-  }
-}
+@import 'blocks/header-top/header-top';
+
 
 // SUB HEADER
 #sub-head {

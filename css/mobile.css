@@ -1,6 +1,5 @@
 h1 {
   font-size: 32px;
-  line-height: 1.125;
   margin: 1em 0 1em;
 }
 
@@ -26,12 +25,7 @@ h4 {
   font-size: 16px;
 }
 
-.container {
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-#header .container {
+.header-top__container {
   margin: 140px auto 100px;
 }
 

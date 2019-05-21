@@ -80,8 +80,8 @@ body {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  color: #4A4556;
   background: #fff;
+  color: #4A4556;
   height: 100%;
 }
 
@@ -92,16 +92,18 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "DIN Pro";
   font-weight: normal;
+  line-height: inherit;
+  line-height: 1.25;
 }
 
-h1, h3 {
+h3 {
   text-align: center;
 }
 
-h1, h2 {
+h2 {
   color: #222;
 }
-#footer h1, #footer h2 {
+#footer h2 {
   color: #fff;
 }
 
@@ -364,16 +366,22 @@ input[type="submit"]:active {
   color: #F47821;
 }
 
-.header-top__content {
+.container {
+  box-sizing: content-box;
+}
+.container__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header-top {
   text-align: center;
 }
-
-.container {
-  margin: 0 auto;
-}
-
-#page {
-  width: 100%;
+.header-top__site-title {
+  color: #222;
+  line-height: 1.125;
 }
 
 #benefits,

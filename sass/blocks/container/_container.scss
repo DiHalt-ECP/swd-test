@@ -1,15 +1,41 @@
 
+// Container - page block for content.
+//  .container - page block.
+//  .container__wrapper - mix to position content in the center.
+// -----------------------------------------------------------------------------
 
-// Container - page block wrapper
-
-$file_name: "container.#{$type}.scss";
-
-@import 'container.screen.scss';
-@import 'container.mobile.scss';
-// @import 'container.tablet.scss';
-// @import 'container.desktop.scss';
+$name: "%container-#{$type}";
+$mods: "__wrapper";
 
 .container {
-  @extend %container-#{$type};
+  @include cond-extend($name, $mods);
+}
+
+
+// -----------------------------------------------------------------------------
+// Container styles of all media queries for style.css file.
+// -----------------------------------------------------------------------------
+%container-screen {
+  box-sizing: content-box;
+
+  &__wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutter-width;
+    padding-right: $gutter-width;
+  }
+
+  // ?????????
+  // position: relative;
+}
+
+
+// -----------------------------------------------------------------------------
+// Container styles for desktop file.
+// -----------------------------------------------------------------------------
+%container-desktop {
+  &__wrapper {
+    max-width: $page_width;
+  }
 }
 

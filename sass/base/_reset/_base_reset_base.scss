@@ -11,8 +11,8 @@ body {
   font-family: $sans-serif-small;
   line-height: 1.625;
   @include box-sizing(border-box);
-  color: $color;
   background: $page_bg;
+  color: $color;
   height: 100%;
 }
 body {

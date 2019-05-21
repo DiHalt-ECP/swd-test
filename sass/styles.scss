@@ -1,4 +1,6 @@
 
+$type:  screen;
+
 // Settings & Mixins
 @import 'base/base';
 // -----------------------------------------------------------------------------
@@ -11,17 +13,13 @@
 
 
 
-@import 'blocks/header-top/header-top';
 @import 'blocks/container/container';
+// HEADER
+@import 'blocks/header-top/header-top';
 
 
 
 
-
-
-#page {
-  width: 100%;
-}
 
 
 
