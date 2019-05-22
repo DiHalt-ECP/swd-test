@@ -90,19 +90,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  color: #222;
   font-family: "DIN Pro";
   font-weight: normal;
   line-height: inherit;
   line-height: 1.25;
 }
 
-h3 {
-  text-align: center;
-}
-
-h2 {
-  color: #222;
-}
 #footer h2 {
   color: #fff;
 }
@@ -376,12 +370,34 @@ input[type="submit"]:active {
   padding-right: 10px;
 }
 
+._type_h1.block-header__title {
+  color: #222;
+  line-height: 1.125;
+}
+._ta_center.block-header__title {
+  text-align: center;
+}
+
 .header-top {
   text-align: center;
 }
-.header-top__site-title {
-  color: #222;
-  line-height: 1.125;
+
+.header-sub {
+  line-height: 1;
+}
+.header-sub__content {
+  overflow: hidden;
+}
+.header-sub__image {
+  max-width: none;
+  margin: 0;
+  display: block;
+  position: relative;
+  left: 50%;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
 }
 
 #benefits,
@@ -437,22 +453,6 @@ a.button::after {
 }
 a.button:hover::before, a.button:focus::before {
   width: 100%;
-}
-
-#sub-head {
-  line-height: 1;
-  overflow: hidden;
-}
-#sub-head .content {
-  position: relative;
-  left: 50%;
-}
-#sub-head img {
-  position: relative;
-  -moz-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
 }
 
 .condition-list {

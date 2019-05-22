@@ -1,0 +1,39 @@
+
+// BLOCK HEADER - header of block.
+//  .block-header - the header block contains header h1..h6 for block.
+//  .block-header__title - TITLE - the header element such as h1..h6.
+// Modificators for .block-header__title.
+//  ._type_h1.. ._type_h6 - TITLE Styles of tags such as h1..h6.
+//  ._ta_center - TITLE style - the text is align in the center.
+// -----------------------------------------------------------------------------
+
+$name: "%block-header-#{$type}";
+$mods: "__title";
+
+.block-header {
+  @include cond-extend($name, $mods);
+}
+
+
+// -----------------------------------------------------------------------------
+// BLOCK HEADER styles of all media queries for style.css file.
+// -----------------------------------------------------------------------------
+%block-header-screen {
+  &__title {
+    &._type_h1 {
+      color: $color_dark;
+      line-height: 1.125;
+    }
+    &._ta_center {
+      text-align: center;
+    }
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// BLOCK HEADER styles for desktop file.
+// -----------------------------------------------------------------------------
+%block-header-desktop {
+}
+

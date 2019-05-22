@@ -1,17 +1,13 @@
 
 h1,h2,h3,h4,h5,h6 {
+  color: $color_dark;
   font-family: $ff_head;
   font-weight: normal;
   line-height: inherit;
   line-height: 1.25;
 }
 
-h3 {
-  text-align: center;
-}
-
 h2 {
-  color: $color_dark;
   #footer & {
     color: $footer_color;
   }

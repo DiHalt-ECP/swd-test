@@ -1,23 +1,15 @@
-h1 {
+h1, h2 {
   font-size: 48px;
-  margin: 0.5em 0 0.5em;
-}
-
-h2 {
-  font-size: 48px;
-  line-height: 1.25;
   margin: 0.5em 0;
 }
 
 h3 {
   font-size: 40px;
-  line-height: 1.25;
   margin: 1em 0;
 }
 
 h4 {
   font-size: 24px;
-  line-height: 1.25;
   margin: 10px 0;
 }
 
@@ -26,14 +18,17 @@ h4 {
 }
 
 .header-top__container {
-  margin: 165px auto 125px;
+  padding: 141px 10px 125px;
 }
 
-#sub-head {
-  max-height: 600px;
+.header-sub__image {
+  height: 600px;
 }
-#sub-head img {
-  width: 100%;
+
+.description__container {
+  max-width: 775px;
+  padding-top: 56px;
+  padding-bottom: 80px;
 }
 
 #conditions .container {
@@ -46,12 +41,6 @@ h4 {
 .condition h4 {
   height: 3.75em;
   overflow: hidden;
-}
-
-#description .container {
-  max-width: 770px;
-  padding-top: 60px;
-  padding-bottom: 75px;
 }
 
 #benefits .container {

@@ -6,17 +6,19 @@ $type:  tablet;
 
 
 @import 'blocks/container/container';
-// HEADER
+// HEADER row
 @import 'blocks/header-top/header-top';
+// BLOCK HEADERS - block titles, h1..h6
+@import 'blocks/block-header/block-header';
+
+// HEADER-SUB row
+@import 'blocks/header-sub/header-sub';
+
+// DESCRIPTION row
+@import 'blocks/description/description';
 
 
-// SUB HEADER
-#sub-head {
-  img {
-    max-width: none;
-    height: 600px;
-  }
-}
+
 
 
 // CONDITIONS
@@ -37,15 +39,6 @@ $type:  tablet;
 }
 
 
-// DESCRIPTION
-#description {
-  .container {
-    width: 75%;
-    max-width: 750px;
-    padding-top: 40px;
-    padding-bottom: 50px;
-  }
-}
 
 
 // BENEFITS

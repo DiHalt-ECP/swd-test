@@ -1,56 +1,60 @@
 
-// HEADER-TOP
-//  .header-top - top header block.
-//  .header-top__content - contains the content in the TOP HEADER block.
-//  .header-top__container - mix to position content in the TOP HEADER block - margin.
+// DESCRIPTION
+//  .description - description block.
+//  .description__content - contains the content in the DESCRIPTION block.
+//  .description__container - mix to position content in description block -
+//  width & margin.
 // -----------------------------------------------------------------------------
 
-$name: "%header-top-#{$type}";
-$mods: "__container" "__content";
+$name: "%description-#{$type}";
+$mods: "__container";
 
-.header-top {
+.description {
   @include cond-extend($name, $mods);
 }
 
 
 // -----------------------------------------------------------------------------
-// HEADER-TOP styles of all media queries for style.css file.
+// DESCRIPTION styles of all media queries for style.css file.
 // -----------------------------------------------------------------------------
-%header-top-screen {
-  // position: relative;
-  text-align: center;
-}
-
-
-// -----------------------------------------------------------------------------
-// HEADER-TOP styles for mobile file.
-// -----------------------------------------------------------------------------
-%header-top-mobile {
+%description-screen {
   &__container {
-    padding: 108px $gutter-width 100px;
-    // margin: 140px auto 100px;
   }
 }
 
 
 // -----------------------------------------------------------------------------
-// HEADER-TOP styles for tablet file.
+// DESCRIPTION styles for mobile file.
 // -----------------------------------------------------------------------------
-%header-top-tablet {
+%description-mobile {
   &__container {
-    padding: 108px $gutter-width 100px;
-    // margin: 140px auto 100px;
+    width: 80%;
+    padding-top: 40px;
+    padding-bottom: 50px;
   }
 }
 
 
 // -----------------------------------------------------------------------------
-// HEADER-TOP styles for desktop file.
+// DESCRIPTION styles for tablet file.
 // -----------------------------------------------------------------------------
-%header-top-desktop {
+%description-tablet {
   &__container {
-    padding: 141px $gutter-width 125px;
-    // margin: 165px auto 125px;
+    width: 75%;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// DESCRIPTION styles for desktop file.
+// -----------------------------------------------------------------------------
+%description-desktop {
+  &__container {
+    max-width: 775px;
+    padding-top: 56px;
+    padding-bottom: 80px;
   }
 }
 

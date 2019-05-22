@@ -14,9 +14,15 @@ $type:  screen;
 
 
 @import 'blocks/container/container';
-// HEADER
-@import 'blocks/header-top/header-top';
+// BLOCK HEADERS - block titles, h1..h6
+@import 'blocks/block-header/block-header';
 
+// HEADER row
+@import 'blocks/header-top/header-top';
+// HEADER-SUB row
+@import 'blocks/header-sub/header-sub';
+// DESCRIPTION row
+@import 'blocks/description/description';
 
 
 
@@ -79,23 +85,6 @@ a.button {
   &:hover::before,
   &:focus::before {
     width: 100%;
-  }
-}
-
-
-
-// SUB HEAD
-#sub-head {
-  line-height: 1;
-  overflow: hidden;
-
-  .content {
-    position: relative;
-    left: 50%;
-  }
-  img {
-    position: relative;
-    @include translate(-50%, 0);
   }
 }
 

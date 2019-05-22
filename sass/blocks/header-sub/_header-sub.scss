@@ -1,0 +1,66 @@
+
+// HEADER-SUB
+//  .header-sub - sub header block.
+//  .header-sub__content - contains the content in the SUB HEADER block.
+//  .header-sub__image - contains the image like as a background in the
+//  SUB HEADER block.
+// -----------------------------------------------------------------------------
+
+$name: "%header-sub-#{$type}";
+$mods: "__content" "__image";
+
+.header-sub {
+  @include cond-extend($name, $mods);
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADER-SUB styles of all media queries for style.css file.
+// -----------------------------------------------------------------------------
+%header-sub-screen {
+  line-height: 1;
+
+  &__content {
+    overflow: hidden;
+  }
+  &__image {
+    max-width: none;
+    margin: 0;
+    display: block;
+    position: relative;
+    left: 50%;
+    @include translate(-50%, 0);
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADER-SUB styles for mobile file.
+// -----------------------------------------------------------------------------
+%header-sub-mobile {
+  &__image {
+    height: 350px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADER-SUB styles for tablet file.
+// -----------------------------------------------------------------------------
+%header-sub-tablet {
+  &__image {
+    height: 500px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// HEADER-SUB styles for desktop file.
+// -----------------------------------------------------------------------------
+%header-sub-desktop {
+  &__image {
+    height: 600px;
+  }
+}
+
+

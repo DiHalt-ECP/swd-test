@@ -7,19 +7,18 @@ $type:  desktop;
 
 
 @import 'blocks/container/container';
-// HEADER
+// HEADER row
 @import 'blocks/header-top/header-top';
+// BLOCK HEADERS - block titles, h1..h6
+@import 'blocks/block-header/block-header';
+
+// HEADER-SUB row
+@import 'blocks/header-sub/header-sub';
+
+// DESCRIPTION row
+@import 'blocks/description/description';
 
 
-
-
-// SUB HEADER
-#sub-head {
-  max-height: 600px;
-  img {
-    width: 100%;
-  }
-}
 
 
 // CONDITIONS
@@ -36,17 +35,6 @@ $type:  desktop;
   h4 {
     height: 3.75em;
     overflow: hidden;
-  }
-}
-
-
-// DESCRIPTION
-#description {
-  .container {
-    max-width: 770px;
-    // margin: 80px auto 100px;
-    padding-top: 60px;
-    padding-bottom: 75px;
   }
 }
 

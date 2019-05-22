@@ -9,18 +9,17 @@ $type:  mobile;
 }
 
 @import 'blocks/container/container';
-// HEADER
+// HEADER row
 @import 'blocks/header-top/header-top';
+// BLOCK HEADERS - block titles, h1..h6
+@import 'blocks/block-header/block-header';
 
+// HEADER-SUB row
+@import 'blocks/header-sub/header-sub';
 
+// DESCRIPTION row
+@import 'blocks/description/description';
 
-// SUB HEADER
-#sub-head {
-  img {
-    max-width: none;
-    height: 400px;
-  }
-}
 
 
 // CONDITIONS
@@ -32,16 +31,6 @@ $type:  mobile;
 .condition {
   .content {
     padding: 40px 30px 30px;
-  }
-}
-
-
-// DESCRIPTION
-#description {
-  .container {
-    max-width: 80%;
-    padding-top: 40px;
-    padding-bottom: 50px;
   }
 }
 
