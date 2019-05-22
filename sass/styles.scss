@@ -21,9 +21,11 @@ $type:  screen;
 @import 'blocks/header-top/header-top';
 // HEADER-SUB row
 @import 'blocks/header-sub/header-sub';
+
 // DESCRIPTION row
 @import 'blocks/description/description';
-
+// BENEFITS row
+@import 'blocks/benefits/benefits';
 
 
 
@@ -107,18 +109,8 @@ a.button {
 }
 
 
-// DESCRIPTION
-#description {
-}
-
 // BENEFITS
 .benefit {
-  margin-top: 20px;
-  .content {
-    max-width: 335px;
-    padding-top: 52px;
-    background: url(img/money.png) no-repeat;
-  }
 }
 
 

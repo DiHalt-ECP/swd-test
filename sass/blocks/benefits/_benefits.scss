@@ -1,0 +1,84 @@
+
+// BENEFITS
+//  .benefits - BENEFITS block.
+//  .benefits__list - list of the benefit items in the BENEFITS block.
+//  .benefits__item - the benefit item in the BENEFITS block.
+//  .benefits__content - contains the content in the BENEFITS block.
+//  .benefits__text - contains the text content without header in the BENEFITS block.
+//  .header-top__container - mix to position content in the BENEFITS block - padding.
+// -----------------------------------------------------------------------------
+
+$name: "%benefits-#{$type}";
+$mods: "__container" "__list" "__item" "__content" "__text";
+
+.benefits {
+  @include cond-extend($name, $mods);
+}
+
+
+// -----------------------------------------------------------------------------
+// BENEFITS styles of all media queries for style.css file.
+// -----------------------------------------------------------------------------
+%benefits-screen {
+  background: $page_bg_2;
+
+  &__item {
+    margin-top: 20px;
+    box-sizing: border-box;
+  }
+  &__content {
+    max-width: 335px;
+    padding-top: 52px;
+    background: url(img/money.png) no-repeat;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// BENEFITS styles for mobile file.
+// -----------------------------------------------------------------------------
+%benefits-mobile {
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// BENEFITS styles for tablet file.
+// -----------------------------------------------------------------------------
+%benefits-tablet {
+  &__container {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// BENEFITS styles for desktop file.
+// -----------------------------------------------------------------------------
+%benefits-desktop {
+  &__container {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+  &__item {
+    width: 33.3333%;
+    float: left;
+
+    &:nth-child(3n+1) {
+      padding-right: 50px;
+    }
+    &:nth-child(3n+2) {
+      padding-right: 25px;
+      padding-left: 25px;
+    }
+    &:nth-child(3n+3) {
+      padding-left: 50px;
+    }
+  }
+}
+
+

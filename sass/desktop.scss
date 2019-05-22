@@ -17,6 +17,8 @@ $type:  desktop;
 
 // DESCRIPTION row
 @import 'blocks/description/description';
+// BENEFITS row
+@import 'blocks/benefits/benefits';
 
 
 
@@ -43,20 +45,9 @@ $type:  desktop;
 #benefits {
   .container {
     // margin: 80px 0 160px;
-    padding-top: 80px;
-    padding-bottom: 140px;
   }
 }
 .benefit {
-  &:nth-child(3n+1) .content {
-    margin-right: 50px;
-  }
-  &:nth-child(3n+2) .content {
-    margin: 0 25px;
-  }
-  &:nth-child(3n+3) .content {
-    margin-left: 50px;
-  }
 }
 
 

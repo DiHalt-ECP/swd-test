@@ -101,30 +101,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
-h3, h5 {
-  color: #000;
-}
-#footer h3, #footer h5 {
-  color: #fff;
-}
-
-h5 {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.25;
-  padding-bottom: 1.25em;
-  margin: 30px 0;
-  position: relative;
-}
-h5::after {
-  content: '';
-  display: block;
-  position: absolute;
-  bottom: 0;
-  width: 24px;
-  border-bottom: 2px solid #F47821;
-}
-
 h6 {
   font-size: 12px;
   font-weight: bold;
@@ -374,8 +350,27 @@ input[type="submit"]:active {
   color: #222;
   line-height: 1.125;
 }
+._type_h3.block-header__title, ._type_h5.block-header__title {
+  color: #000;
+}
+._type_h5.block-header__title {
+  padding-bottom: 1.25em;
+  margin: 30px 0;
+  position: relative;
+}
+._type_h5.block-header__title::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 24px;
+  border-bottom: 2px solid #F47821;
+}
 ._ta_center.block-header__title {
   text-align: center;
+}
+._color_light.block-header__title {
+  color: #fff;
 }
 
 .header-top {
@@ -398,6 +393,19 @@ input[type="submit"]:active {
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
+}
+
+.benefits {
+  background: #F7F5FA;
+}
+.benefits__item {
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+.benefits__content {
+  max-width: 335px;
+  padding-top: 52px;
+  background: url(img/money.png) no-repeat;
 }
 
 #benefits,
@@ -467,15 +475,6 @@ a.button:hover::before, a.button:focus::before {
 .condition .content {
   border-right: 1px solid #EDEDED;
   border-bottom: 1px solid #EDEDED;
-}
-
-.benefit {
-  margin-top: 20px;
-}
-.benefit .content {
-  max-width: 335px;
-  padding-top: 52px;
-  background: url(img/money.png) no-repeat;
 }
 
 #footer {

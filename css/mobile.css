@@ -31,17 +31,17 @@ h4 {
   padding-bottom: 50px;
 }
 
+.benefits__container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
 #conditions .container {
   max-width: 80%;
 }
 
 .condition .content {
   padding: 40px 30px 30px;
-}
-
-#benefits .container {
-  padding-top: 40px;
-  padding-bottom: 50px;
 }
 
 .benefit {

@@ -19,6 +19,8 @@ $type:  mobile;
 
 // DESCRIPTION row
 @import 'blocks/description/description';
+// BENEFITS row
+@import 'blocks/benefits/benefits';
 
 
 
@@ -39,8 +41,6 @@ $type:  mobile;
 // BENEFITS
 #benefits {
   .container {
-    padding-top: 40px;
-    padding-bottom: 50px;
   }
 }
 .benefit {

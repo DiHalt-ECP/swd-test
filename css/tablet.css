@@ -27,6 +27,11 @@ h4 {
   padding-bottom: 50px;
 }
 
+.benefits__container {
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
 #conditions .container {
   width: 80%;
   min-width: 740px;
@@ -38,11 +43,6 @@ h4 {
 .condition h4 {
   height: 5em;
   overflow: hidden;
-}
-
-#benefits .container {
-  padding-top: 40px;
-  padding-bottom: 50px;
 }
 
 .benefit {

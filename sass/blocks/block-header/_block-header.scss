@@ -24,8 +24,29 @@ $mods: "__title";
       color: $color_dark;
       line-height: 1.125;
     }
+    &._type_h3 {
+      color: $color_dark_2;
+    }
+    &._type_h5 {
+      @extend ._type_h3;
+      padding-bottom: 1.25em;
+      margin: 30px 0;
+      position: relative;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        bottom: 0;
+        width: 24px;
+        border-bottom: 2px solid  $link_color;
+      }
+    }
     &._ta_center {
       text-align: center;
+    }
+    &._color_light {
+      color: $footer_color;
     }
   }
 }
