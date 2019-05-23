@@ -16,25 +16,12 @@ $type:  mobile;
 
 // HEADER-SUB row
 @import 'blocks/header-sub/header-sub';
-
+// CONDITIONS row
+@import 'blocks/conditions/conditions';
 // DESCRIPTION row
 @import 'blocks/description/description';
 // BENEFITS row
 @import 'blocks/benefits/benefits';
-
-
-
-// CONDITIONS
-#conditions {
-  .container {
-    max-width: 80%;
-  }
-}
-.condition {
-  .content {
-    padding: 40px 30px 30px;
-  }
-}
 
 
 

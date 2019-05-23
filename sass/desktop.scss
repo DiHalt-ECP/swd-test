@@ -14,31 +14,14 @@ $type:  desktop;
 
 // HEADER-SUB row
 @import 'blocks/header-sub/header-sub';
-
+// CONDITIONS row
+@import 'blocks/conditions/conditions';
 // DESCRIPTION row
 @import 'blocks/description/description';
 // BENEFITS row
 @import 'blocks/benefits/benefits';
 
 
-
-
-// CONDITIONS
-// .condition-list {
-#conditions {
-  .container {
-    max-width: 972px;
-  }
-}
-.condition {
-  .content {
-    padding: 50px 70px 50px 60px;
-  }
-  h4 {
-    height: 3.75em;
-    overflow: hidden;
-  }
-}
 
 
 // FOOTER

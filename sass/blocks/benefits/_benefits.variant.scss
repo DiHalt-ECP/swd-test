@@ -5,7 +5,7 @@
 //  .benefits__item - the benefit item in the BENEFITS block.
 //  .benefits__content - contains the content in the BENEFITS block.
 //  .benefits__text - contains the text content without header in the BENEFITS block.
-//  .benefits__container - mix to position content in the BENEFITS block - padding.
+//  .header-top__container - mix to position content in the BENEFITS block - padding.
 // -----------------------------------------------------------------------------
 
 $name: "%benefits-#{$type}";
@@ -29,7 +29,6 @@ $mods: "__container" "__list" "__item" "__content" "__text";
   &__content {
     max-width: 335px;
     padding-top: 52px;
-    margin: 20px auto 0;
     background: url(img/money.png) no-repeat;
   }
 }
@@ -46,6 +45,7 @@ $mods: "__container" "__list" "__item" "__content" "__text";
 
   &__item {
     padding-bottom: 20px;
+    margin: 20px auto 0;
   }
 }
 
@@ -61,6 +61,7 @@ $mods: "__container" "__list" "__item" "__content" "__text";
 
   &__item {
     padding-bottom: 20px;
+    margin: 20px auto 0;
   }
 }
 
@@ -69,6 +70,8 @@ $mods: "__container" "__list" "__item" "__content" "__text";
 // BENEFITS styles for desktop file.
 // -----------------------------------------------------------------------------
 %benefits-desktop {
+  $self:  &;
+
   &__container {
     padding-top: 80px;
     padding-bottom: 140px;
@@ -78,14 +81,20 @@ $mods: "__container" "__list" "__item" "__content" "__text";
     float: left;
 
     &:nth-child(3n+1) {
-      padding-right: 50px;
+      & #{$self}__content {
+        margin-right: 50px;
+      }
     }
     &:nth-child(3n+2) {
-      padding-right: 25px;
-      padding-left: 25px;
+      & #{$self}__content {
+        margin-right: 25px;
+        margin-left: 25px;
+      }
     }
     &:nth-child(3n+3) {
-      padding-left: 50px;
+      & #{$self}__content {
+        margin-left: 50px;
+      }
     }
   }
 }

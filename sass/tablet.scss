@@ -13,7 +13,8 @@ $type:  tablet;
 
 // HEADER-SUB row
 @import 'blocks/header-sub/header-sub';
-
+// CONDITIONS row
+@import 'blocks/conditions/conditions';
 // DESCRIPTION row
 @import 'blocks/description/description';
 // BENEFITS row
@@ -23,22 +24,6 @@ $type:  tablet;
 
 
 
-// CONDITIONS
-#conditions {
-  .container {
-    width: 80%;
-    min-width: 740px;
-  }
-}
-.condition {
-  .content {
-    padding: 40px 30px 40px;
-  }
-  h4 {
-    height: 5em;
-    overflow: hidden;
-  }
-}
 
 
 // FOOTER

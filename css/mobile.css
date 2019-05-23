@@ -8,11 +8,6 @@ h3 {
   margin: 1em 0;
 }
 
-h4 {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
 #page {
   font-size: 16px;
 }
@@ -25,6 +20,9 @@ h4 {
   height: 350px;
 }
 
+.conditions__container {
+  max-width: 80%;
+}
 .description__container {
   width: 80%;
   padding-top: 40px;
@@ -37,15 +35,6 @@ h4 {
 }
 .benefits__item {
   padding-bottom: 20px;
-  margin: 20px auto;
-}
-
-#conditions .container {
-  max-width: 80%;
-}
-
-.condition .content {
-  padding: 40px 30px 30px;
 }
 
 #footer .form-item {

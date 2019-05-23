@@ -1,0 +1,101 @@
+
+// CONDITIONS
+//  .conditions - CONDITIONS block.
+//  .conditions__list - list of the condition items in the CONDITIONS block.
+//  .conditions__item - the condition item in the CONDITIONS block.
+//  .conditions__text - contains the text content (sub-heading h4) in the CONDITIONS block.
+//  .conditions__container - mix to position content in the BENEFITS block - padding.
+// -----------------------------------------------------------------------------
+
+$name: "%conditions-#{$type}";
+$mods: "__container" "__list" "__item" "__text";
+
+.conditions {
+  @include cond-extend($name, $mods);
+}
+
+
+// -----------------------------------------------------------------------------
+// CONDITIONS styles of all media queries for style.css file.
+// -----------------------------------------------------------------------------
+%conditions-screen {
+  background: $page_bg_2;
+
+  &__list {
+    background: $page_bg;
+    border-top: 1px solid $border;
+    border-left: 1px solid $border;
+    position: relative;
+    top: -100px;
+    margin: 0 auto;
+  }
+  &__item {
+    border-right: 1px solid  $border;
+    border-bottom: 1px solid  $border;
+    box-sizing: border-box;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 1.25;
+    margin: 10px 0;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// CONDITIONS styles for mobile file.
+// -----------------------------------------------------------------------------
+%conditions-mobile {
+  &__container {
+    max-width: 80%;
+  }
+
+  &__content {
+    padding: 40px 30px 30px;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// CONDITIONS styles for tablet file.
+// -----------------------------------------------------------------------------
+%conditions-tablet {
+  &__container {
+    width: 80%;
+    min-width: 740px;
+  }
+  &__item {
+    width: 50%;
+    float: left;
+  }
+  &__content {
+    padding: 40px 30px 40px;
+  }
+  &__text {
+    height: 5em;
+    overflow: hidden;
+  }
+}
+
+
+// -----------------------------------------------------------------------------
+// CONDITIONS styles for desktop file.
+// -----------------------------------------------------------------------------
+%conditions-desktop {
+  &__container {
+    max-width: 972px;
+  }
+  &__item {
+    width: 50%;
+    float: left;
+  }
+  &__content {
+    padding: 50px 70px 50px 60px;
+  }
+  &__text {
+    height: 3.75em;
+    overflow: hidden;
+  }
+}
+
+

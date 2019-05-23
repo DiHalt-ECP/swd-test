@@ -8,17 +8,25 @@ h3 {
   margin: 1em 0;
 }
 
-h4 {
-  font-size: 24px;
-  margin: 10px 0;
-}
-
 .header-top__container {
   padding: 108px 10px 100px;
 }
 
 .header-sub__image {
   height: 500px;
+}
+
+.conditions__container {
+  width: 80%;
+  min-width: 740px;
+}
+.conditions__item {
+  width: 50%;
+  float: left;
+}
+.conditions__text {
+  height: 5em;
+  overflow: hidden;
 }
 
 .description__container {
@@ -33,20 +41,6 @@ h4 {
 }
 .benefits__item {
   padding-bottom: 20px;
-  margin: 20px auto;
-}
-
-#conditions .container {
-  width: 80%;
-  min-width: 740px;
-}
-
-.condition .content {
-  padding: 40px 30px 40px;
-}
-.condition h4 {
-  height: 5em;
-  overflow: hidden;
 }
 
 #footer .form-item {

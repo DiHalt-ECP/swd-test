@@ -20,6 +20,18 @@ h3 {
   height: 600px;
 }
 
+.conditions__container {
+  max-width: 972px;
+}
+.conditions__item {
+  width: 50%;
+  float: left;
+}
+.conditions__text {
+  height: 3.75em;
+  overflow: hidden;
+}
+
 .description__container {
   max-width: 775px;
   padding-top: 56px;
@@ -43,18 +55,6 @@ h3 {
 }
 .benefits__item:nth-child(3n+3) {
   padding-left: 50px;
-}
-
-#conditions .container {
-  max-width: 972px;
-}
-
-.condition .content {
-  padding: 50px 70px 50px 60px;
-}
-.condition h4 {
-  height: 3.75em;
-  overflow: hidden;
 }
 
 #footer .form-item {

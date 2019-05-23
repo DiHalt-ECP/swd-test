@@ -18,7 +18,8 @@ $type:  screen;
 @import 'blocks/header-top/header-top';
 // HEADER-SUB row
 @import 'blocks/header-sub/header-sub';
-
+// CONDITIONS row
+@import 'blocks/conditions/conditions';
 // DESCRIPTION row
 @import 'blocks/description/description';
 // BENEFITS row
@@ -27,11 +28,6 @@ $type:  screen;
 
 
 
-
-// BLOCKS
-#conditions {
-  background: $page_bg_2;
-}
 
 
 a.button {
@@ -83,24 +79,6 @@ a.button {
   &:hover::before,
   &:focus::before {
     width: 100%;
-  }
-}
-
-
-// CONDITIONS
-.condition-list {
-  background: $page_bg;
-  border-top: 1px solid $border;
-  border-left: 1px solid $border;
-  position: relative;
-  top: -100px;
-  margin: 0 auto;
-}
-
-.condition {
-  .content {
-    border-right: 1px solid  $border;
-    border-bottom: 1px solid  $border;
   }
 }
 
