@@ -23,11 +23,11 @@ $mods: "__container" "__list" "__item" "__content" "__text";
   background: $page_bg_2;
 
   &__item {
+    max-width: 335px;
     margin-top: 20px;
     box-sizing: border-box;
   }
   &__content {
-    max-width: 335px;
     padding-top: 52px;
     background: url(img/money.png) no-repeat;
   }
@@ -42,6 +42,11 @@ $mods: "__container" "__list" "__item" "__content" "__text";
     padding-top: 40px;
     padding-bottom: 50px;
   }
+
+  &__item {
+    padding-bottom: 20px;
+    margin: 20px auto;
+  }
 }
 
 
@@ -52,6 +57,11 @@ $mods: "__container" "__list" "__item" "__content" "__text";
   &__container {
     padding-top: 40px;
     padding-bottom: 50px;
+  }
+
+  &__item {
+    padding-bottom: 20px;
+    margin: 20px auto;
   }
 }
 

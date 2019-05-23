@@ -97,15 +97,22 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.25;
 }
 
-#footer h2 {
-  color: #fff;
+h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
 }
 
 h6 {
   font-size: 12px;
   font-weight: bold;
   line-height: 1.5833em;
-  margin: 0 0 10px;
+  margin: 10px 0;
 }
 
 figure {
@@ -330,12 +337,6 @@ input[type="submit"]:active {
   text-align: center;
 }
 
-.title-orange-stylize {
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: #F47821;
-}
-
 .container {
   box-sizing: content-box;
 }
@@ -366,8 +367,16 @@ input[type="submit"]:active {
   width: 24px;
   border-bottom: 2px solid #F47821;
 }
+._type_h6.block-header__title {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin: 0 0 10px;
+}
 ._ta_center.block-header__title {
   text-align: center;
+}
+._color_link.block-header__title {
+  color: #F47821;
 }
 ._color_light.block-header__title {
   color: #fff;
@@ -399,16 +408,15 @@ input[type="submit"]:active {
   background: #F7F5FA;
 }
 .benefits__item {
+  max-width: 335px;
   margin-top: 20px;
   box-sizing: border-box;
 }
 .benefits__content {
-  max-width: 335px;
   padding-top: 52px;
   background: url(img/money.png) no-repeat;
 }
 
-#benefits,
 #conditions {
   background: #F7F5FA;
 }
@@ -528,14 +536,10 @@ a.button:hover::before, a.button:focus::before {
   border: 2px solid #444;
 }
 
-.message__header {
-  padding: 10px 0 15px;
+.message__block-header {
+  padding: 10px 0 0px;
   margin: 0 0 20px;
   border-bottom: 1px solid #444;
-}
-
-.message__title {
-  margin: 0;
 }
 
 .message__item {

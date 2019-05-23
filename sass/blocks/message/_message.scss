@@ -7,13 +7,11 @@
   border: 2px solid $message_border;
 }
 
-.message__header {
-  padding: 10px 0 15px;
+// MIX for add styles to header of message.
+.message__block-header {
+  padding: 10px 0 0px;
   margin: 0 0 20px;
   border-bottom: 1px solid  $border_form;
-}
-.message__title {
-  margin: 0;
 }
 
 .message__item {

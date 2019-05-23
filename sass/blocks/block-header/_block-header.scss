@@ -42,8 +42,16 @@ $mods: "__title";
         border-bottom: 2px solid  $link_color;
       }
     }
+    &._type_h6 {
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin: 0 0 10px;
+    }
     &._ta_center {
       text-align: center;
+    }
+    &._color_link {
+      color: $link_color;
     }
     &._color_light {
       color: $footer_color;

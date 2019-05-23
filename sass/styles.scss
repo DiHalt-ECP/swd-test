@@ -8,9 +8,6 @@ $type:  screen;
 // -----------------------------------------------------------------------------
 @import 'base/base_reset';
 
-// MIX for stylize h6 title
-@import 'blocks/title-orange-stylize/title-orange-stylize';
-
 
 
 @import 'blocks/container/container';
@@ -32,7 +29,6 @@ $type:  screen;
 
 
 // BLOCKS
-#benefits,
 #conditions {
   background: $page_bg_2;
 }
@@ -107,14 +103,6 @@ a.button {
     border-bottom: 1px solid  $border;
   }
 }
-
-
-// BENEFITS
-.benefit {
-}
-
-
-
 
 
 // FOOTER

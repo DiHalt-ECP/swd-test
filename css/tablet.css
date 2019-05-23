@@ -31,6 +31,10 @@ h4 {
   padding-top: 40px;
   padding-bottom: 50px;
 }
+.benefits__item {
+  padding-bottom: 20px;
+  margin: 20px auto;
+}
 
 #conditions .container {
   width: 80%;
@@ -43,13 +47,6 @@ h4 {
 .condition h4 {
   height: 5em;
   overflow: hidden;
-}
-
-.benefit {
-  padding-bottom: 20px;
-}
-.benefit .content {
-  margin: 0 auto;
 }
 
 #footer .form-item {
