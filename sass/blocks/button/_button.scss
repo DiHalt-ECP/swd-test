@@ -1,0 +1,25 @@
+
+// BUTTON - block for styling a, button and input tags as button? static or synamic.
+//  .button - block/container of button element.
+//            And also to use mixins to set the size and / or position.
+//  .button__item - Stylized button item.
+// -----------------------------------------------------------------------------
+// MODIFICATORS
+// -----------------------------------------------------------------------------
+// {.BUTTON__ITEM}
+// \._style_static\ - default style button.
+// ._style_dynamic - кнопка с прозрачным фоном, рядом с кнопкой круг с плюсом внутри.
+//                   при наыедении фон круга расширяется на всю ширину кнопки.
+// ._style_dynamic-input - для элемента input. input надо обернуть в .button__item._style_dynamic-input.
+// ._color_inverse - default: background - orange, color - white. The mod inverse this colors.
+// -----------------------------------------------------------------------------
+
+
+$btn_height: 54px;
+
+.button {
+  text-align: center;
+
+  @import '__item/button__item';
+}
+

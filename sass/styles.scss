@@ -9,7 +9,16 @@ $type:  screen;
 @import 'base/base_reset';
 
 
+@import 'blocks/button/button';
+@import 'blocks/button-close/button-close';
 
+// -----------------------------------------------------------------------------
+// Message block for User
+// -----------------------------------------------------------------------------
+@import 'blocks/message/message';
+@import 'blocks/popup-box/popup-box';
+
+// PAGE CONTAINER.
 @import 'blocks/container/container';
 // BLOCK HEADERS - block titles, h1..h6
 @import 'blocks/block-header/block-header';
@@ -30,25 +39,28 @@ $type:  screen;
 
 
 
+
 a.button {
   $btn_size: 54px;
 
-  position: relative;
-  display: inline-block;
+  position: relative;                 // +
+  display: inline-block;              // +
 
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
+  font-weight: bold;                  // +
+  text-decoration: none;              // +
+  text-transform: uppercase;          // +
 
   color: $color_dark;
   background-color: transparent;
   margin: 10px 0 0;
-  padding: 0 30px 0 45px;
-  height: $btn_size;
-  line-height: $btn_size;
-  z-index: 1;
+  padding: 0 30px 0 45px;             // +
 
-  @include transition-property(none);
+  height: $btn_size;                  // +
+  line-height: $btn_size;             // +
+
+  z-index: 1;                         // +
+
+  @include transition-property(none); // +
 
   &::before,
   &::after {
@@ -132,16 +144,9 @@ a.button {
       margin-bottom: 0;
     }
   }
-
 }
 
 
-// -----------------------------------------------------------------------------
-// Message block for User
-// -----------------------------------------------------------------------------
-@import 'blocks/message/message';
-@import 'blocks/button-close/button-close';
-@import 'blocks/popup-box/popup-box';
 
 
 

@@ -79,33 +79,6 @@ input[type="radio"] + label::before {
 }
 
 
-button,
-input[type="button"],
-input[type="submit"] {
-  font-size: inherit;
-  font-family: inherit;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  line-height: 1;
-
-  position: relative;
-  cursor: pointer;
-
-  padding: 19px 40px;
-  margin: 0;
-  border: none;
-
-  @include link-colors($link_color, $page_bg, $page_bg, $link_color, $page_bg);
-  @include link-bg($page_bg, $link_color, $link_color, $page_bg, $link_color);
-  @include border-radius(100px);
-  @include transition(color 300ms ease-out, background 300ms ease-out);
-
-  &:active {
-    top: 2px;
-  }
-}
-
 .form-item {
   margin: 0 0 35px;
 }
@@ -113,10 +86,6 @@ input[type="submit"] {
 .form-type-text label,
 .form-type-textarea label {
   display: block;
-}
-.form-type-button {
-  margin: 0 auto;
-  text-align: center;
 }
 
 

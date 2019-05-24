@@ -1,9 +1,11 @@
 
-// USER MESSAGE
+// POPUP BOX is the overlay layer for messages or popup content.
 
+// Block layer.
 .popup-box {
   @include style-overlay(rgba(#000, 0.75), fixed, 10);
 }
+// States of visible block.
 .popup-box_hide {
   display: none;
 }
@@ -11,7 +13,7 @@
   display: block;
 }
 
-// mix - position inner of message-popup block
+// mix - position inner of message-popup block.
 .popup-box__message {
   position: relative;
   top: 50%;
