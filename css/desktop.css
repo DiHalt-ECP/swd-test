@@ -27,6 +27,9 @@ h3 {
   width: 50%;
   float: left;
 }
+.conditions__content {
+  padding: 50px 70px 50px 60px;
+}
 .conditions__text {
   height: 3.75em;
   overflow: hidden;

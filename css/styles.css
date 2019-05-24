@@ -265,7 +265,7 @@ input[type="radio"] + label::before {
 .button {
   text-align: center;
 }
-.button__item, .button__item._style_dynamic-input input {
+.button__item, .button__item.-dynamic-input input {
   position: relative;
   display: inline-block;
   font-size: inherit;
@@ -315,7 +315,7 @@ input[type="radio"] + label::before {
 .button__item:active {
   background: #fff;
 }
-.button__item._style_dynamic, .button__item._style_dynamic-input, .button__item._style_dynamic-input input {
+.button__item.-dynamic, .button__item.-dynamic-input, .button__item.-dynamic-input input {
   color: #222;
   background-color: transparent;
   padding: 0 30px 0 45px;
@@ -324,11 +324,11 @@ input[type="radio"] + label::before {
   -webkit-transition-property: none;
   transition-property: none;
 }
-.button__item._style_dynamic, .button__item._style_dynamic-input {
+.button__item.-dynamic, .button__item.-dynamic-input {
   margin: 10px 0 0;
   z-index: 1;
 }
-.button__item._style_dynamic::before, .button__item._style_dynamic-input::before, .button__item._style_dynamic::after, .button__item._style_dynamic-input::after {
+.button__item.-dynamic::before, .button__item.-dynamic-input::before, .button__item.-dynamic::after, .button__item.-dynamic-input::after {
   position: absolute;
   left: 0;
   top: 0;
@@ -337,7 +337,7 @@ input[type="radio"] + label::before {
   height: 54px;
   line-height: 54px;
 }
-.button__item._style_dynamic::before, .button__item._style_dynamic-input::before {
+.button__item.-dynamic::before, .button__item.-dynamic-input::before {
   content: '';
   background: rgba(136, 136, 136, 0.15);
   -moz-border-radius: 100px;
@@ -349,48 +349,48 @@ input[type="radio"] + label::before {
   transition: width 300ms ease-out;
   z-index: -1;
 }
-.button__item._style_dynamic::after, .button__item._style_dynamic-input::after {
+.button__item.-dynamic::after, .button__item.-dynamic-input::after {
   content: '+';
   font-size: 27px;
   font-weight: normal;
   text-align: center;
   color: #F47821;
 }
-.button__item._style_dynamic:hover::before, .button__item._style_dynamic-input:hover::before, .button__item._style_dynamic:focus::before, .button__item._style_dynamic-input:focus::before {
+.button__item.-dynamic:hover::before, .button__item.-dynamic-input:hover::before, .button__item.-dynamic:focus::before, .button__item.-dynamic-input:focus::before {
   width: 100%;
 }
-.button__item._style_dynamic-input {
+.button__item.-dynamic-input {
   padding: 0;
 }
 .button__item:active {
   top: 2px;
 }
-.button__item._color_inverse {
+.button__item--inverse {
   color: #F47821;
   background: #fff;
 }
-.button__item._color_inverse:visited {
+.button__item--inverse:visited {
   color: #F47821;
 }
-.button__item._color_inverse:focus {
+.button__item--inverse:focus {
   color: #fff;
 }
-.button__item._color_inverse:hover {
+.button__item--inverse:hover {
   color: #fff;
 }
-.button__item._color_inverse:active {
+.button__item--inverse:active {
   color: #fff;
 }
-.button__item._color_inverse:visited {
+.button__item--inverse:visited {
   background: #fff;
 }
-.button__item._color_inverse:focus {
+.button__item--inverse:focus {
   background: #F47821;
 }
-.button__item._color_inverse:hover {
+.button__item--inverse:hover {
   background: #F47821;
 }
-.button__item._color_inverse:active {
+.button__item--inverse:active {
   background: #F47821;
 }
 
@@ -517,19 +517,19 @@ input[type="radio"] + label::before {
   padding-right: 10px;
 }
 
-._type_h1.block-header__title {
+.-type--h1.block-header__title {
   color: #222;
   line-height: 1.125;
 }
-._type_h3.block-header__title, ._type_h5.block-header__title {
+.-type--h3.block-header__title, .-type--h5.block-header__title {
   color: #000;
 }
-._type_h5.block-header__title {
+.-type--h5.block-header__title {
   padding-bottom: 1.25em;
   margin: 30px 0;
   position: relative;
 }
-._type_h5.block-header__title::after {
+.-type--h5.block-header__title::after {
   content: '';
   display: block;
   position: absolute;
@@ -537,18 +537,18 @@ input[type="radio"] + label::before {
   width: 24px;
   border-bottom: 2px solid #F47821;
 }
-._type_h6.block-header__title {
+.-type--h6.block-header__title {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   margin: 0 0 10px;
 }
-._ta_center.block-header__title {
+.-ta--center.block-header__title {
   text-align: center;
 }
-._color_link.block-header__title {
+.-color--link.block-header__title {
   color: #F47821;
 }
-._color_light.block-header__title {
+.-color--light.block-header__title {
   color: #fff;
 }
 

@@ -7,22 +7,22 @@
 // MODIFICATORS
 // -----------------------------------------------------------------------------
 // {.BUTTON__ITEM}
-// \._style_static\ - default style button.
-// ._style_dynamic - кнопка с прозрачным фоном, рядом с кнопкой круг с плюсом внутри.
+// !!.-static!! - default style button.
+// .-dynamic - кнопка с прозрачным фоном, рядом с кнопкой круг с плюсом внутри.
 //                   при наыедении фон круга расширяется на всю ширину кнопки.
-// ._style_dynamic-input - для элемента input. input надо обернуть в .button__item._style_dynamic-input.
-// ._color_inverse - default: background - orange, color - white. The mod inverse this colors.
+// .-dynamic-input - для элемента input. input надо обернуть в .button__item.-dynamic-input.
+// --inverse - default: background - orange, color - white. The mod inverse this colors.
 // -----------------------------------------------------------------------------
 
 
-&._style_dynamic-input input {
-  @extend %button__item;
-  @extend %_style_dynamic;
-}
 
-
-&._style_dynamic-input {
-  @extend ._style_dynamic;
+&.-dynamic-input {
+  @extend .-dynamic;
   padding: 0;
+
+  input {
+    @extend %button__item;
+    @extend %button--dynamic;
+  }
 }
 

@@ -3,8 +3,8 @@
 //  .block-header - the header block contains header h1..h6 for block.
 //  .block-header__title - TITLE - the header element such as h1..h6.
 // Modificators for .block-header__title.
-//  ._type_h1.. ._type_h6 - TITLE Styles of tags such as h1..h6.
-//  ._ta_center - TITLE style - the text is align in the center.
+//  .-type--h1.. .-type--h6 - TITLE Styles of tags such as h1..h6.
+//  .-ta--center - TITLE style - the text is align in the center.
 // -----------------------------------------------------------------------------
 
 $name: "%block-header-#{$type}";
@@ -20,15 +20,15 @@ $mods: "__title";
 // -----------------------------------------------------------------------------
 %block-header-screen {
   &__title {
-    &._type_h1 {
+    &.-type--h1 {
       color: $color_dark;
       line-height: 1.125;
     }
-    &._type_h3 {
+    &.-type--h3 {
       color: $color_dark_2;
     }
-    &._type_h5 {
-      @extend ._type_h3;
+    &.-type--h5 {
+      @extend .-type--h3;
       padding-bottom: 1.25em;
       margin: 30px 0;
       position: relative;
@@ -42,18 +42,18 @@ $mods: "__title";
         border-bottom: 2px solid  $link_color;
       }
     }
-    &._type_h6 {
+    &.-type--h6 {
       text-transform: uppercase;
       letter-spacing: 0.04em;
       margin: 0 0 10px;
     }
-    &._ta_center {
+    &.-ta--center {
       text-align: center;
     }
-    &._color_link {
+    &.-color--link {
       color: $link_color;
     }
-    &._color_light {
+    &.-color--light {
       color: $footer_color;
     }
   }

@@ -8,7 +8,7 @@
 // -----------------------------------------------------------------------------
 
 $name: "%conditions-#{$type}";
-$mods: "__container" "__list" "__item" "__text";
+$mods: "__container" "__list" "__item" "__content" "__text";
 
 .conditions {
   @include cond-extend($name, $mods);
