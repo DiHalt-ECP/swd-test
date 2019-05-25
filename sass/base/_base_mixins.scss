@@ -88,14 +88,34 @@
 //
 // Name: Conditional extend.
 // Desc: Условное добавление стилей с помощью @extend %class
-// Return: base and all extended classes form $modificators
+// Return: base and all extended classes from $elements && $modificators
 // -----------------------------------------------------------------------------
-@mixin cond-extend($class, $modificators: false) {
+@mixin cond-extend($class, $elements: false, $modificators: false) {
   @extend #{$class} !optional;
+
+  // class is extended by modificators.
   @if $modificators {
     @each $mod in $modificators {
-      &#{$mod} {
-        @extend #{$class}#{$mod} !optional;
+      &--#{$mod} {
+        @extend #{$class}--#{$mod} !optional;
+      }
+    }
+  }
+
+  @if $elements {
+    // class is extended by elements.
+    @each $elem in $elements {
+      &__#{$elem} {
+        @extend #{$class}__#{$elem} !optional;
+      }
+
+      // element is extended by modificators.
+      @if $modificators {
+        @each $mod in $modificators {
+          &__#{$elem}--#{$mod} {
+            @extend #{$class}__#{$elem}--#{$mod} !optional;
+          }
+        }
       }
     }
   }

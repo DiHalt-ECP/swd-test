@@ -1,0 +1,121 @@
+
+// BLOCK TITLE - header of block.
+//  .title - the header block contains header h1..h6 for block.
+//  .title__item - TITLE - the header element such as h1..h6.
+// Modificators for .title__item.
+//  .title__item--h1 ... .title__item--h6 - TITLE Styles of tags such as h1..h6.
+//  .-ta--center - TITLE style - the text is align in the center.
+// -----------------------------------------------------------------------------
+
+$name: "%title-#{$type}";
+$elems: "item";
+$mods: h1, h2, h3, h4, h5, h6;
+
+.title {
+  @include cond-extend($name, $elems, $mods);
+}
+
+
+// -----------------------------------------------------------------------------
+// BLOCK HEADER styles of all media queries for style.css file.
+// -----------------------------------------------------------------------------
+%title-screen {
+  &__item {
+    $self: &;
+
+    @at-root %title-color {
+      color: $color_dark;
+    }
+
+    &--h1 {
+      line-height: 1.125;
+      @extend %title-color;
+    }
+    &--h2 {
+      @extend %title-color;
+    }
+    &--h3 {
+      color: $color_dark_2;
+    }
+    &--h4 {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+    &--h5 {
+      @extend #{$self}--h3;
+      font-size: 20px;
+      font-weight: bold;
+      margin: 10px 0;
+    }
+    &--h6 {
+      font-size: 12px;
+      font-weight: bold;
+      line-height: 1.5833em;
+      margin: 10px 0 10px;
+
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+
+    &.-ta--center {
+      text-align: center;
+    }
+    &.-color--link {
+      color: $link_color;
+    }
+    &.-color--light {
+      color: $footer_color;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// BLOCK HEADER styles for mobile file.
+// -----------------------------------------------------------------------------
+%title-mobile {
+  &__item {
+    $self: &;
+
+    &--h1 {
+      font-size: 32px;
+      margin: 1em 0;
+    }
+    &--h2 {
+      @extend #{$self}--h1;
+    }
+    &--h3 {
+      font-size: 28px;
+      margin: 1em 0;
+    }
+  }
+}
+
+// -----------------------------------------------------------------------------
+// BLOCK HEADER styles for tablet file.
+// -----------------------------------------------------------------------------
+%title-tablet {
+  @include cond-extend("%title-mobile", "item", (h1 h2 h3));
+}
+
+// -----------------------------------------------------------------------------
+// BLOCK HEADER styles for desktop file.
+// -----------------------------------------------------------------------------
+%title-desktop {
+  &__item {
+    $self: &;
+
+    &--h1 {
+      font-size: 48px;
+      margin: 0.5em 0;
+    }
+    &--h2 {
+      @extend #{$self}--h1;
+    }
+    &--h3 {
+      font-size: 40px;
+      margin: 1em 0;
+    }
+  }
+}
+

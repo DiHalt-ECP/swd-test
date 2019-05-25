@@ -7,10 +7,10 @@
 // -----------------------------------------------------------------------------
 
 $name: "%description-#{$type}";
-$mods: "__container";
+$elems: container;
 
 .description {
-  @include cond-extend($name, $mods);
+  @include cond-extend($name, $elems);
 }
 
 

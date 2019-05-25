@@ -1,15 +1,14 @@
-h1, h2 {
+.container__wrapper {
+  max-width: 1160px;
+}
+
+.title__item--h1, .title__item--h2 {
   font-size: 48px;
   margin: 0.5em 0;
 }
-
-h3 {
+.title__item--h3 {
   font-size: 40px;
   margin: 1em 0;
-}
-
-.container__wrapper {
-  max-width: 1160px;
 }
 
 .header-top__container {

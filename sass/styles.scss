@@ -12,16 +12,16 @@ $type:  screen;
 @import 'blocks/button/button';
 @import 'blocks/button-close/button-close';
 
+// PAGE CONTAINER.
+@import 'blocks/container/container';
+// BLOCK TITLE - block titles, h1..h6
+@import 'blocks/title/title';
+
 // -----------------------------------------------------------------------------
 // Message block for User
 // -----------------------------------------------------------------------------
 @import 'blocks/message/message';
 @import 'blocks/popup-box/popup-box';
-
-// PAGE CONTAINER.
-@import 'blocks/container/container';
-// BLOCK HEADERS - block titles, h1..h6
-@import 'blocks/block-header/block-header';
 
 // HEADER row
 @import 'blocks/header-top/header-top';

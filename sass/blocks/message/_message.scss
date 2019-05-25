@@ -8,13 +8,13 @@
 }
 
 // MIX for add styles to header of message.
-.message__block-header {
+.message__title {
   padding: 10px 0 0px;
   margin: 0 0 20px;
   border-bottom: 1px solid  $border_form;
 }
 
-.message__item {
+.message__items {
   line-height: 1.25;
 
   &_msg {

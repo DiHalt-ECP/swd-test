@@ -6,10 +6,11 @@
 //  .benefits__content - contains the content in the BENEFITS block.
 //  .benefits__text - contains the text content without header in the BENEFITS block.
 //  .benefits__container - mix to position content in the BENEFITS block - padding.
+//  .benefits__title-item - mix of title item element to position BLOCK TITLE in the BENEFITS block.
 // -----------------------------------------------------------------------------
 
 $name: "%benefits-#{$type}";
-$mods: "__container" "__list" "__item" "__content" "__text";
+$mods: container, title-item, list, item, content, text;
 
 .benefits {
   @include cond-extend($name, $mods);
@@ -23,14 +24,30 @@ $mods: "__container" "__list" "__item" "__content" "__text";
   background: $page_bg_2;
 
   &__item {
-    margin-top: 20px;
+    margin: 0;
     box-sizing: border-box;
   }
   &__content {
     max-width: 335px;
-    padding-top: 52px;
     margin: 20px auto 0;
-    background: url(img/money.png) no-repeat;
+  }
+  &__title-item {
+    position: relative;
+    margin: 0px 0 30px;
+
+    // next 3rows from __content
+    padding-bottom: 1.25em;
+    padding-top: 82px;
+    background: url(img/money.png) left top no-repeat;
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      width: 24px;
+      border-bottom: 2px solid  $link_color;
+    }
   }
 }
 

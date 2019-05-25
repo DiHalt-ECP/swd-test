@@ -5,10 +5,10 @@
 // -----------------------------------------------------------------------------
 
 $name: "%container-#{$type}";
-$mods: "__wrapper";
+$elems: wrapper;
 
 .container {
-  @include cond-extend($name, $mods);
+  @include cond-extend($name, $elems);
 }
 
 

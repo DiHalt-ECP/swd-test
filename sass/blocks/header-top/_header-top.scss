@@ -6,10 +6,10 @@
 // -----------------------------------------------------------------------------
 
 $name: "%header-top-#{$type}";
-$mods: "__container" "__content";
+$elems: container, content;
 
 .header-top {
-  @include cond-extend($name, $mods);
+  @include cond-extend($name, $elems);
 }
 
 

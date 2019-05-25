@@ -8,10 +8,10 @@
 // -----------------------------------------------------------------------------
 
 $name: "%conditions-#{$type}";
-$mods: "__container" "__list" "__item" "__content" "__text";
+$elems: container list item content text title-item;
 
 .conditions {
-  @include cond-extend($name, $mods);
+  @include cond-extend($name, $elems);
 }
 
 
@@ -38,6 +38,9 @@ $mods: "__container" "__list" "__item" "__content" "__text";
     font-size: 24px;
     line-height: 1.25;
     margin: 10px 0;
+  }
+  &__title-item {
+    margin: 0 0 10px;
   }
 }
 

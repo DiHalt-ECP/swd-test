@@ -7,10 +7,10 @@
 // -----------------------------------------------------------------------------
 
 $name: "%header-sub-#{$type}";
-$mods: "__content" "__image";
+$elems: content, image;
 
 .header-sub {
-  @include cond-extend($name, $mods);
+  @include cond-extend($name, $elems);
 }
 
 

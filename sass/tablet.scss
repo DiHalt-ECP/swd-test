@@ -6,10 +6,11 @@ $type:  tablet;
 
 
 @import 'blocks/container/container';
+// BLOCK TITLE - block titles, h1..h6
+@import 'blocks/title/title';
+
 // HEADER row
 @import 'blocks/header-top/header-top';
-// BLOCK HEADERS - block titles, h1..h6
-@import 'blocks/block-header/block-header';
 
 // HEADER-SUB row
 @import 'blocks/header-sub/header-sub';
