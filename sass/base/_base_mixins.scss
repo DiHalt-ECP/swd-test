@@ -61,15 +61,12 @@
 // Link Background helper
 // -----------------------------------------------------------------------------
 @mixin link-bg($normal, $hover: false, $active: false, $visited: false, $focus: false) {
+
   background: $normal;
+
   @if $visited {
     &:visited {
       background: $visited;
-    }
-  }
-  @if $focus {
-    &:focus {
-      background: $focus;
     }
   }
   @if $hover {
@@ -80,6 +77,11 @@
   @if $active {
     &:active {
       background: $active;
+    }
+  }
+  @if $focus {
+    &:focus {
+      background: $focus;
     }
   }
 }

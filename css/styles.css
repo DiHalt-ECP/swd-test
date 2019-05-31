@@ -288,13 +288,13 @@ input[type="radio"] + label::before {
 .button__item:visited {
   background: #F47821;
 }
-.button__item:focus {
-  background: #fff;
-}
 .button__item:hover {
   background: #fff;
 }
 .button__item:active {
+  background: #fff;
+}
+.button__item:focus {
   background: #fff;
 }
 .button__item.-dynamic, .button__item.-dynamic-input, .button__item.-dynamic-input input {
@@ -366,13 +366,13 @@ input[type="radio"] + label::before {
 .button__item--inverse:visited {
   background: #fff;
 }
-.button__item--inverse:focus {
-  background: #F47821;
-}
 .button__item--inverse:hover {
   background: #F47821;
 }
 .button__item--inverse:active {
+  background: #F47821;
+}
+.button__item--inverse:focus {
   background: #F47821;
 }
 
@@ -411,13 +411,13 @@ input[type="radio"] + label::before {
 .button-close:visited {
   background: #f7f5fa;
 }
-.button-close:focus {
-  background: #F47821;
-}
 .button-close:hover {
   background: #F47821;
 }
 .button-close:active {
+  background: #F47821;
+}
+.button-close:focus {
   background: #F47821;
 }
 .button-close::after {
@@ -486,10 +486,11 @@ input[type="radio"] + label::before {
 .message__items {
   line-height: 1.25;
 }
-.message__items_msg {
+
+.message__item_msg {
   margin: 0 0 1em 2em;
 }
-.message__items_label {
+.message__item_label {
   margin: 0;
   text-decoration: underline;
 }
