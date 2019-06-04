@@ -610,56 +610,6 @@ input[type="radio"] + label::before {
   border-bottom: 2px solid #F47821;
 }
 
-a.button {
-  position: relative;
-  display: inline-block;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #222;
-  background-color: transparent;
-  margin: 10px 0 0;
-  padding: 0 30px 0 45px;
-  height: 54px;
-  line-height: 54px;
-  z-index: 1;
-  -moz-transition-property: none;
-  -o-transition-property: none;
-  -webkit-transition-property: none;
-  transition-property: none;
-}
-a.button::before, a.button::after {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 54px;
-  height: 54px;
-  line-height: 54px;
-}
-a.button::before {
-  content: '';
-  background: rgba(136, 136, 136, 0.15);
-  -moz-border-radius: 100px;
-  -webkit-border-radius: 100px;
-  border-radius: 100px;
-  -moz-transition: width 300ms ease-out;
-  -o-transition: width 300ms ease-out;
-  -webkit-transition: width 300ms ease-out;
-  transition: width 300ms ease-out;
-  z-index: -1;
-}
-a.button::after {
-  content: '+';
-  font-size: 27px;
-  font-weight: normal;
-  text-align: center;
-  color: #F47821;
-}
-a.button:hover::before, a.button:focus::before {
-  width: 100%;
-}
-
 #footer {
   color: #fff;
   background: #161616;

@@ -39,62 +39,6 @@ $type:  screen;
 
 
 
-
-a.button {
-  $btn_size: 54px;
-
-  position: relative;                 // +
-  display: inline-block;              // +
-
-  font-weight: bold;                  // +
-  text-decoration: none;              // +
-  text-transform: uppercase;          // +
-
-  color: $color_dark;
-  background-color: transparent;
-  margin: 10px 0 0;
-  padding: 0 30px 0 45px;             // +
-
-  height: $btn_size;                  // +
-  line-height: $btn_size;             // +
-
-  z-index: 1;                         // +
-
-  @include transition-property(none); // +
-
-  &::before,
-  &::after {
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: $btn_size;
-    height: $btn_size;
-    line-height: $btn_size;
-  }
-
-  &::before {
-    content: '';
-    background: rgba(#888, 0.15);
-    @include border-radius(100px);
-    @include single-transition(width, 300ms, ease-out);
-    z-index: -1;
-  }
-
-  &::after {
-    content: '+';
-    font-size: 27px;
-    font-weight: normal;
-    text-align: center;
-    color: $link_color;
-  }
-  &:hover::before,
-  &:focus::before {
-    width: 100%;
-  }
-}
-
-
 // FOOTER
 #footer {
 
@@ -145,9 +89,6 @@ a.button {
     }
   }
 }
-
-
-
 
 
 
